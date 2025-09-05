@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ee2a0784.css",
+    "main.js": "/static/js/main.250947e2.js",
+    "static/js/453.f845e572.chunk.js": "/static/js/453.f845e572.chunk.js",
+    "static/media/team.png": "/static/media/team.84949ea5dbf787761fe6.png",
+    "static/media/Lejla.jpg": "/static/media/Lejla.7fd76bf62d1e9cf9501e.jpg",
+    "static/media/Web.png": "/static/media/Web.9e0487c3018deeb71745.png",
+    "static/media/Design.png": "/static/media/Design.8dda9f3188afb8d7d79d.png",
+    "static/media/cloud.png": "/static/media/cloud.e56ade445c1677c793c5.png",
+    "static/media/Mobile.png": "/static/media/Mobile.d82aed1b215ff39e60a6.png",
+    "static/media/NotFound.png": "/static/media/NotFound.67759b4097c5294d1ab9.png",
+    "static/media/BuildWebsite.png": "/static/media/BuildWebsite.2d15641dcb298d3ebdbc.png",
+    "static/media/logo.png": "/static/media/logo.8e07dbe8a90cd660ff2e.png",
+    "static/media/Amra.jpg": "/static/media/Amra.d03a2982978ba6c1ad59.jpg",
+    "static/media/Tarik.jpg": "/static/media/Tarik.0acf17f214f7b1ce391a.jpg",
+    "static/media/Management.png": "/static/media/Management.323b1fec36c45ff45ef7.png",
+    "static/media/Collaborative.png": "/static/media/Collaborative.2f9892ac98e9b787a975.png",
+    "static/media/Communicative.png": "/static/media/Communicative.eba258160f4e17106ad0.png",
+    "static/media/Favorite.png": "/static/media/Favorite.cb968fa8bc7d31037eb0.png",
+    "index.html": "/index.html",
+    "main.ee2a0784.css.map": "/static/css/main.ee2a0784.css.map",
+    "main.250947e2.js.map": "/static/js/main.250947e2.js.map",
+    "453.f845e572.chunk.js.map": "/static/js/453.f845e572.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee2a0784.css",
+    "static/js/main.250947e2.js"
+  ]
+}
