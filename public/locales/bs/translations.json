@@ -1,0 +1,99 @@
+{
+  "menu": {
+    "home": "Početna",
+    "about": "O nama",
+    "cloud": "Cloud",
+    "contact": "Kontakt"
+  },
+  "advantage": {
+    "title": "Zašto odabrati nas",
+    "subtitle": "Saznajte zašto smo pravi izbor za vaše knjigovodstvene potrebe.",
+    "items": {
+      "0": [
+        {
+          "title": "Brza i tačna obrada",
+          "description": "Garantujemo efikasnu i preciznu obradu svih vaših finansijskih podataka."
+        },
+        {
+          "title": "Iskusni stručnjaci",
+          "description": "Naš tim čine certificirani i iskusni knjigovođe."
+        }
+      ],
+      "1": [
+        {
+          "title": "Puna transparentnost",
+          "description": "Sve naše usluge su potpuno transparentne i prilagođene vašim potrebama."
+        },
+        {
+          "title": "Podrška klijentima",
+          "description": "Dostupni smo za sva vaša pitanja i konsultacije tokom cijele godine."
+        }
+      ]
+    }
+  },
+  "cloudInfo": {
+    "title": "Pristup dokumentima u cloud-u",
+    "desc": "Naši klijenti imaju mogućnost sigurnog pristupa svojim poslovnim dokumentima i izvještajima putem online platforme. Prijavite se u svoj <b>cloud račun</b> i preuzmite potrebne datoteke u bilo kojem trenutku i s bilo koje lokacije.<br /><br />Za pristup svom cloud profilu koristite korisničko ime i lozinku koje ste dobili od našeg tima. Ako imate poteškoća s pristupom, kontaktirajte nas za podršku.",
+    "login": "Prijava u cloud"
+  },
+  "discuss": {
+    "title": "Imate li ideju ili trebate knjigovodstvenu podršku?",
+    "button": "Kontaktirajte nas",
+    "desc": "Javite nam se i zajedno ćemo pronaći najbolje rješenje za vaše poslovanje!"
+  },
+  "discussForm": {
+    "title": "Pošaljite upit",
+    "desc": "Molimo ispunite obrazac ispod kako biste nam poslali upit ili opis vašeg zahtjeva. Odgovorit ćemo vam u roku 24 sata.",
+    "placeholder": {
+      "name": "Vaše ime",
+      "company": "Naziv firme",
+      "email": "Vaša e-mail adresa",
+      "phone": "Kontakt broj",
+      "projectIdea": "Opišite svoj upit ili ideju"
+    },
+    "send": "Pošalji",
+    "success": "Poruka je uspješno poslana! Javit ćemo vam se uskoro. Hvala!",
+    "error": "Došlo je do greške prilikom slanja. Pokušajte ponovno.",
+    "required": "Molimo ispunite sva polja."
+  },
+  "footer": {
+    "slogan": "Pouzdanost, preciznost i moderna podrška za vaše poslovanje",
+    "contactTitle": "Kontakt",
+    "email": "bsbiro@hotmail.com",
+    "phone": "(+387) 061-736-613",
+    "address1": "Adolfa Goldbergera 9",
+    "address2": "Zenica, Bosna i Hercegovina",
+    "locationTitle": "Lokacija",
+    "copyright": "Sva prava zadržana - Amir Bašić",
+    "scrollTop": "Idi na vrh stranice"
+  },
+  "hero": {
+    "title": "Inovativna rješenja <br />za vaše knjigovodstvo",
+    "desc": "Specijalizirani smo za knjigovodstvene usluge i digitalizaciju poslovanja.<br />Naša stručnost u knjigovodstvu dodatno je unaprijeđena inovativnim softverskim rješenjima, čime olakšavamo i automatiziramo vaše financijske procese.",
+    "cta": "Kontaktirajte nas!"
+  },
+  "about": {
+    "title": "O nama",
+    "desc": "BS Biro je moderna knjigovodstvena agencija iz Zenice posvećena pružanju pouzdane i profesionalne podrške svim svojim klijentima. Naš tim objedinjuje znanje iz knjigovodstva i softverskog inženjeringa kako bismo vam omogućili precizno, efikasno i digitalizirano poslovanje.<br /><br />Naš cilj je olakšati vaše svakodnevne obaveze, automatizirati procese i osigurati transparentnost i sigurnost vaših financija. Svakom klijentu pristupamo individualno, nudeći rješenja prilagođena potrebama vašeg poslovanja.<br /><br />Naš rad prilagođavamo svakom klijentu, nudeći fleksibilna i individualna rješenja za vaše poslovanje. Cilj nam je pružiti jasne savjete i kvalitetne mjesečne usluge na jednostavan i razumljiv način, uvijek uz pošten i transparentan odnos prema cijenama. Svoju stručnost gradimo kroz stalno usavršavanje i praćenje najnovijih trendova u knjigovodstvu i tehnologiji.<br /><br />Svjesni smo osjetljivosti podataka s kojima radimo, zato posebno pazimo na sigurnost i povjerljivost svih vaših dokumenata. Povjerenje i lojalnost klijenata smatramo najvećom vrijednošću našeg poslovanja.<br /><br />Zahvaljujući pozitivnoj atmosferi i predanosti unutar tima, s lakoćom odgovaramo na vaše zahtjeve i nastojimo svakodnevno unaprijediti našu uslugu."
+  },
+   "services": {
+    "title": "Naše usluge",
+    "desc": "Pomažemo vam unaprijediti poslovanje kroz knjigovodstvene i softverske usluge prilagođene vašim potrebama."
+  },
+  "testimonials": {
+    "title": "Iskustva naših klijenata",
+    "desc": "Pogledajte što klijenti kažu o suradnji s nama."
+  },
+  "cloudLogin": {
+    "back": "Povratak na početnu",
+    "title": "Prijava u cloud",
+    "username": "Korisničko ime",
+    "password": "Lozinka",
+    "login": "Prijava"
+  }
+
+
+
+
+
+}

@@ -1,0 +1,94 @@
+{
+  "menu": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "cloud": "Cloud",
+    "contact": "Contatto"
+  },
+  "advantage": {
+    "title": "Perché scegliere noi",
+    "subtitle": "Scopri perché siamo la scelta giusta per le tue esigenze contabili.",
+    "items": {
+      "0": [
+        {
+          "title": "Elaborazione rapida e precisa",
+          "description": "Garantiamo un'elaborazione efficiente e accurata di tutti i tuoi dati finanziari."
+        },
+        {
+          "title": "Esperti qualificati",
+          "description": "Il nostro team è composto da contabili certificati ed esperti."
+        }
+      ],
+      "1": [
+        {
+          "title": "Piena trasparenza",
+          "description": "Tutti i nostri servizi sono completamente trasparenti e adattati alle tue esigenze."
+        },
+        {
+          "title": "Supporto clienti",
+          "description": "Siamo disponibili per tutte le tue domande e consulenze durante tutto l'anno."
+        }
+      ]
+    }
+  },
+  "cloudInfo": {
+    "title": "Accesso ai documenti nel cloud",
+    "desc": "I nostri clienti hanno la possibilità di accedere in modo sicuro ai propri documenti aziendali e rapporti tramite la piattaforma online. Accedi al tuo <b>account cloud</b> e scarica i file necessari in qualsiasi momento e da qualsiasi luogo.<br /><br />Per accedere al tuo profilo cloud utilizza il nome utente e la password forniti dal nostro team. Se hai difficoltà ad accedere, contattaci per assistenza.",
+    "login": "Accedi al cloud"
+  },
+  "discuss": {
+    "title": "Hai un'idea o hai bisogno di supporto contabile?",
+    "button": "Contattaci",
+    "desc": "Contattaci e insieme troveremo la soluzione migliore per la tua azienda!"
+  },
+  "discussForm": {
+      "title": "Invia una richiesta",
+      "desc": "Compila il modulo qui sotto per inviarci la tua richiesta o descrivere il tuo bisogno. Ti risponderemo entro 24 ore.",
+      "placeholder": {
+        "name": "Il tuo nome",
+        "company": "Nome dell'azienda",
+        "email": "Il tuo indirizzo email",
+        "phone": "Numero di contatto",
+        "projectIdea": "Descrivi la tua richiesta o idea"
+      },
+      "send": "Invia",
+      "success": "Messaggio inviato con successo! Ti contatteremo presto. Grazie!",
+      "error": "Si è verificato un errore durante l'invio. Riprova.",
+      "required": "Compila tutti i campi."
+    },
+  "footer": {
+    "slogan": "Affidabilità, precisione e supporto moderno per la tua azienda",
+    "contactTitle": "Contatto",
+    "email": "bsbiro@hotmail.com",
+    "phone": "(+387) 061-736-613",
+    "address1": "Adolfa Goldbergera 9",
+    "address2": "Zenica, Bosnia ed Erzegovina",
+    "locationTitle": "Posizione",
+    "copyright": "Tutti i diritti riservati - Amir Bašić",
+    "scrollTop": "Torna all'inizio della pagina"
+  },
+  "hero": {
+    "title": "Soluzioni innovative <br />per la tua contabilità",
+    "desc": "Siamo specializzati in servizi contabili e digitalizzazione aziendale.<br />La nostra competenza in contabilità è ulteriormente rafforzata da soluzioni software innovative, rendendo i tuoi processi finanziari più semplici e automatizzati.",
+    "cta": "Contattaci!"
+  },
+  "about": {
+    "title": "Chi siamo",
+    "desc": "BS Biro è un'agenzia di contabilità moderna di Zenica dedicata a fornire supporto affidabile e professionale a tutti i nostri clienti. Il nostro team unisce competenze in contabilità e ingegneria del software per offrirti operazioni aziendali precise, efficienti e digitalizzate.<br /><br />Il nostro obiettivo è semplificare le tue attività quotidiane, automatizzare i processi e garantire la trasparenza e la sicurezza delle tue finanze. Offriamo soluzioni personalizzate e flessibili per ogni cliente.<br /><br />Adattiamo il nostro lavoro a ciascun cliente, fornendo soluzioni flessibili e individuali per la tua azienda. Il nostro obiettivo è offrire consigli chiari e servizi mensili di qualità in modo semplice e comprensibile, sempre con un rapporto onesto e trasparente sui prezzi. Costruiamo la nostra esperienza attraverso la formazione continua e seguendo le ultime tendenze in contabilità e tecnologia.<br /><br />Siamo consapevoli della sensibilità dei dati con cui lavoriamo, quindi prestiamo particolare attenzione alla sicurezza e alla riservatezza di tutti i tuoi documenti. La fiducia e la lealtà dei clienti sono il valore più grande della nostra attività.<br /><br />Grazie a un'atmosfera positiva e alla dedizione del team, rispondiamo facilmente alle tue richieste e ci impegniamo a migliorare il nostro servizio ogni giorno."
+  },
+  "services": {
+    "title": "I nostri servizi",
+    "desc": "Ti aiutiamo a migliorare il tuo business attraverso servizi contabili e software su misura per le tue esigenze."
+  },
+  "testimonials": {
+    "title": "Esperienze dei nostri clienti",
+    "desc": "Scopri cosa dicono i nostri clienti della collaborazione con noi."
+  },
+  "cloudLogin": {
+    "back": "Torna alla home",
+    "title": "Accesso al cloud",
+    "username": "Nome utente",
+    "password": "Password",
+    "login": "Accedi"
+  }
+}

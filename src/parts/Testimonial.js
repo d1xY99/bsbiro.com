@@ -1,12 +1,4 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-boolean-value */
-// eslint-disable-next-line react/no-array-index-key
-/* eslint-disable react/prop-types */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable  */
-
 import React from 'react';
-
 import { Fade } from 'react-awesome-reveal';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {
@@ -19,21 +11,24 @@ import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+import { useTranslation } from 'react-i18next';
+
 export default function Testimonial({ data }) {
+  const { t } = useTranslation();
+
   return (
     <section className="container mx-auto">
       <Fade direction="up">
-  <h1 className="text-5xl text-theme-blue text-center font-bold">
-    Iskustva naših klijenata
-  </h1>
-</Fade>
-<Fade direction="up" delay={500}>
-  <p className="font-light text-lg text-gray-400 text-center mb-3 sm:mb-3 xl:mb-4">
-    Pogledajte što klijenti kažu o suradnji s nama.
-  </p>
-</Fade>
+        <h1 className="text-5xl text-theme-blue text-center font-bold">
+          {t('testimonials.title')}
+        </h1>
+      </Fade>
+      <Fade direction="up" delay={500}>
+        <p className="font-light text-lg text-gray-400 text-center mb-3 sm:mb-3 xl:mb-4">
+          {t('testimonials.desc')}
+        </p>
+      </Fade>
 
-      {/* eslint-disable-next-line react/jsx-max-props-per-line */}
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         className="mySwiper"

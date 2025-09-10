@@ -1,0 +1,94 @@
+{
+  "menu": {
+    "home": "Home",
+    "about": "About Us",
+    "cloud": "Cloud",
+    "contact": "Contact"
+  },
+  "advantage": {
+    "title": "Why Choose Us",
+    "subtitle": "Find out why we are the right choice for your accounting needs.",
+    "items": {
+      "0": [
+        {
+          "title": "Fast and Accurate Processing",
+          "description": "We guarantee efficient and precise handling of all your financial data."
+        },
+        {
+          "title": "Experienced Experts",
+          "description": "Our team consists of certified and experienced accountants."
+        }
+      ],
+      "1": [
+        {
+          "title": "Full Transparency",
+          "description": "All our services are completely transparent and tailored to your needs."
+        },
+        {
+          "title": "Client Support",
+          "description": "We are available for all your questions and consultations throughout the year."
+        }
+      ]
+    }
+  },
+  "cloudInfo": {
+    "title": "Access documents in the cloud",
+    "desc": "Our clients have the ability to securely access their business documents and reports via our online platform. Log in to your <b>cloud account</b> and download the necessary files at any time and from any location.<br /><br />To access your cloud profile, use the username and password provided by our team. If you have any difficulties accessing, contact us for support.",
+    "login": "Cloud Login"
+  },
+  "discuss": {
+    "title": "Do you have an idea or need accounting support?",
+    "button": "Contact Us",
+    "desc": "Reach out to us and together we'll find the best solution for your business!"
+  },
+  "discussForm": {
+      "title": "Send an Inquiry",
+      "desc": "Please fill out the form below to send us your inquiry or describe your request. We will respond within 24 hours.",
+      "placeholder": {
+        "name": "Your name",
+        "company": "Company name",
+        "email": "Your email address",
+        "phone": "Contact number",
+        "projectIdea": "Describe your inquiry or idea"
+      },
+      "send": "Send",
+      "success": "Message successfully sent! We will get back to you soon. Thank you!",
+      "error": "An error occurred while sending. Please try again.",
+      "required": "Please fill out all fields."
+    },
+  "footer": {
+    "slogan": "Reliability, precision and modern support for your business",
+    "contactTitle": "Contact",
+    "email": "bsbiro@hotmail.com",
+    "phone": "(+387) 061-736-613",
+    "address1": "Adolfa Goldbergera 9",
+    "address2": "Zenica, Bosnia and Herzegovina",
+    "locationTitle": "Location",
+    "copyright": "All rights reserved - Amir Bašić",
+    "scrollTop": "Go to top of the page"
+  },
+  "hero": {
+    "title": "Innovative solutions <br />for your accounting",
+    "desc": "We specialize in accounting services and business digitalization.<br />Our expertise in accounting is further enhanced by innovative software solutions, making your financial processes easier and more automated.",
+    "cta": "Contact us!"
+  },
+  "about": {
+    "title": "About Us",
+    "desc": "BS Biro is a modern accounting agency from Zenica dedicated to providing reliable and professional support to all our clients. Our team combines knowledge from accounting and software engineering to enable you to have precise, efficient and digitalized business operations.<br /><br />Our goal is to make your daily tasks easier, automate processes and ensure transparency and security of your finances. We approach each client individually, offering solutions tailored to your business needs.<br /><br />We adapt our work to each client, offering flexible and individual solutions for your business. Our aim is to provide clear advice and quality monthly services in a simple and understandable way, always with fair and transparent pricing. We build our expertise through continuous education and by following the latest trends in accounting and technology.<br /><br />We are aware of the sensitivity of the data we work with, so we pay special attention to the security and confidentiality of all your documents. The trust and loyalty of our clients is considered the greatest value of our business.<br /><br />Thanks to a positive atmosphere and dedication within our team, we easily respond to your requests and strive to improve our service every day."
+  },
+  "services": {
+    "title": "Our Services",
+    "desc": "We help you improve your business through accounting and software services tailored to your needs."
+  },
+  "testimonials": {
+    "title": "Client Experiences",
+    "desc": "See what clients say about working with us."
+  },
+  "cloudLogin": {
+    "back": "Back to home",
+    "title": "Cloud Login",
+    "username": "Username",
+    "password": "Password",
+    "login": "Login"
+  }
+}

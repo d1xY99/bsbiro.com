@@ -1,21 +1,20 @@
 import React, { useState } from 'react';
-
 import { Fade } from 'react-awesome-reveal';
 import * as emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import { useTranslation } from 'react-i18next';
 import { Form } from 'elements/Form';
 import Button from 'elements/Button';
 
 export const DiscussForm = (actions) => {
+  const { t } = useTranslation();
   const { data, resetForm } = actions;
   const [loading, setLoading] = useState(false); 
 
   const submitEmail = () => {
-    const {
-      name, company, email, phone, projectIdea,
-    } = data;
+    const { name, company, email, phone, projectIdea } = data;
 
     const templateParams = {
       from_name: name,
@@ -41,16 +40,16 @@ export const DiscussForm = (actions) => {
         'qdyoRi_TS-odzVwH_',
       )
         .then(() => {
-          toast.success('Poruka je uspješno poslana! Javit ćemo vam se uskoro. Hvala!');
+          toast.success(t('discussForm.success'));
           resetForm();
         }, (error) => {
-          toast.error('Došlo je do greške prilikom slanja. Pokušajte ponovno.');
+          toast.error(t('discussForm.error'));
         })
         .finally(() => {
           setLoading(false); 
         });
     } else {
-      toast.error('Molimo ispunite sva polja.');
+      toast.error(t('discussForm.required'));
     }
   };
 
@@ -58,12 +57,12 @@ export const DiscussForm = (actions) => {
     <section className="flex flex-col container mx-auto mt-10 justify-center">
 
       <Fade direction="down" triggerOnce>
-        <h1 className="text-5xl text-theme-blue text-center font-bold">Pošaljite upit</h1>
+        <h1 className="text-5xl text-theme-blue text-center font-bold">{t('discussForm.title')}</h1>
       </Fade>
 
       <Fade direction="up" triggerOnce>
         <p className="font-light text-lg text-gray-400 text-center mb-12">
-          Molimo ispunite obrazac ispod kako biste nam poslali upit ili opis vašeg zahtjeva. Odgovorit ćemo vam u roku 24 sata.
+          {t('discussForm.desc')}
         </p>
       </Fade>
 
@@ -75,7 +74,7 @@ export const DiscussForm = (actions) => {
               name="name"
               type="text"
               value={data.name}
-              placeholder="Vaše ime"
+              placeholder={t('discussForm.placeholder.name')}
               className=""
               onChange={actions.onChange}
             />
@@ -84,7 +83,7 @@ export const DiscussForm = (actions) => {
               name="company"
               type="text"
               value={data.company}
-              placeholder="Naziv firme"
+              placeholder={t('discussForm.placeholder.company')}
               className=""
               onChange={actions.onChange}
             />
@@ -96,7 +95,7 @@ export const DiscussForm = (actions) => {
               name="email"
               type="email"
               value={data.email}
-              placeholder="Vaša e-mail adresa"
+              placeholder={t('discussForm.placeholder.email')}
               className=""
               onChange={actions.onChange}
             />
@@ -105,7 +104,7 @@ export const DiscussForm = (actions) => {
               name="phone"
               type="number"
               value={data.phone}
-              placeholder="Kontakt broj"
+              placeholder={t('discussForm.placeholder.phone')}
               className=""
               onChange={actions.onChange}
             />
@@ -117,7 +116,7 @@ export const DiscussForm = (actions) => {
               name="projectIdea"
               type="textarea"
               value={data.projectIdea}
-              placeholder="Opišite svoj upit ili ideju"
+              placeholder={t('discussForm.placeholder.projectIdea')}
               className=""
               onChange={actions.onChange}
             />
@@ -144,7 +143,7 @@ export const DiscussForm = (actions) => {
                 />
               </svg>
             ) : null}
-            Pošalji
+            {t('discussForm.send')}
           </Button>
         </div>
       </Fade>
