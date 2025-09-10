@@ -54,7 +54,15 @@
       "send": "Senden",
       "success": "Nachricht erfolgreich gesendet! Wir melden uns bald bei Ihnen. Vielen Dank!",
       "error": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
-      "required": "Bitte füllen Sie alle Felder aus."
+      "required": "Bitte füllen Sie alle Felder aus.",
+      "contactTitle": "Kontaktdaten",
+      "company": "Firma",
+      "address": "Adresse",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "workHours": "Arbeitszeiten",
+      "workHoursValue": "Mo-Fr: 8:00 - 16:00"
+
     },
   "footer": {
     "slogan": "Zuverlässigkeit, Präzision und moderne Unterstützung für Ihr Unternehmen",
@@ -90,5 +98,49 @@
     "username": "Benutzername",
     "password": "Passwort",
     "login": "Anmelden"
+  },
+   "servicesItems": {
+    "knjigovodstvo": {
+      "title": "Buchhaltung"
+    },
+    "softver": {
+      "title": "Software Engineering"
+    },
+    "savjetovanje": {
+      "title": "Unternehmensberatung"
+    }
+  },
+  "advantagesItems": {
+    "komunikativni": {
+      "title": "Kommunikativ",
+      "description": "Wir kommunizieren offen mit unseren Kunden und informieren sie regelmäßig über alle wichtigen Angelegenheiten."
+    },
+    "upravljanje": {
+      "title": "Management",
+      "description": "Wir managen alle Buchhaltungsdienstleistungen professionell, um Ihre Sicherheit und Zuverlässigkeit zu gewährleisten."
+    },
+    "suradnja": {
+      "title": "Zusammenarbeit",
+      "description": "Unser Team arbeitet eng zusammen, damit alle Ihre buchhalterischen Verpflichtungen pünktlich erfüllt werden."
+    },
+    "povjerenje": {
+      "title": "Kundenvertrauen",
+      "description": "Wir haben zahlreiche zufriedene Kunden, die uns seit Jahren ihr Vertrauen schenken."
+    }
+  },
+  "testimonialsItems": {
+    "amra": {
+      "name": "Amra Hadžić",
+      "testimoni": "Vielen Dank an das BS Biro Team, ihr seid wirklich professionell und freundlich! Klare Empfehlung."
+    },
+    "tarik": {
+      "name": "Tarik Šabanović",
+      "testimoni": "Die Zusammenarbeit mit BS Biro ist immer effizient und stressfrei. Alles ist transparent und ordentlich."
+    },
+    "lejla": {
+      "name": "Lejla Karić",
+      "testimoni": "BS Biro hat unser Geschäft erheblich erleichtert. Eine warme Empfehlung für alle Unternehmer!"
+    }
   }
+
 }

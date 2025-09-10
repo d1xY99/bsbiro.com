@@ -54,7 +54,15 @@
     "send": "Pošalji",
     "success": "Poruka je uspješno poslana! Javit ćemo vam se uskoro. Hvala!",
     "error": "Došlo je do greške prilikom slanja. Pokušajte ponovno.",
-    "required": "Molimo ispunite sva polja."
+    "required": "Molimo ispunite sva polja.",
+     "contactTitle": "Kontakt podaci",
+  "company": "Firma",
+  "address": "Adresa",
+  "phone": "Telefon",
+  "email": "E-mail",
+  "workHours": "Radno vrijeme",
+  "workHoursValue": "Pon-Pet: 8:00 - 16:00"
+
   },
   "footer": {
     "slogan": "Pouzdanost, preciznost i moderna podrška za vaše poslovanje",
@@ -90,6 +98,49 @@
     "username": "Korisničko ime",
     "password": "Lozinka",
     "login": "Prijava"
+  },
+  "servicesItems": {
+    "knjigovodstvo": {
+      "title": "Knjigovodstvo"
+    },
+    "softver": {
+      "title": "Softverski inžinjering"
+    },
+    "savjetovanje": {
+      "title": "Poslovno savjetovanje"
+    }
+  },
+  "advantagesItems": {
+    "komunikativni": {
+      "title": "Komunikativni",
+      "description": "Otvoreno komuniciramo s klijentima i redovito ih informiramo o svemu što je važno."
+    },
+    "upravljanje": {
+      "title": "Upravljanje",
+      "description": "Profesionalno upravljamo svim knjigovodstvenim uslugama za vašu sigurnost i pouzdanost."
+    },
+    "suradnja": {
+      "title": "Suradnja",
+      "description": "Naš tim usko surađuje kako bi sve vaše knjigovodstvene obaveze bile ispunjene na vrijeme."
+    },
+    "povjerenje": {
+      "title": "Povjerenje klijenata",
+      "description": "Imamo brojne zadovoljne klijente koji nam već godinama ukazuju povjerenje."
+    }
+  },
+  "testimonialsItems": {
+    "amra": {
+      "name": "Amra Hadžić",
+      "testimoni": "Hvala ekipi iz BS Biro, zaista ste profesionalni i ljubazni! Sve preporuke."
+    },
+    "tarik": {
+      "name": "Tarik Šabanović",
+      "testimoni": "Suradnja s BS Biro je uvijek efikasna i bez stresa. Sve je transparentno i uredno."
+    },
+    "lejla": {
+      "name": "Lejla Karić",
+      "testimoni": "BS Biro nam je značajno olakšao poslovanje. Topla preporuka za sve poduzetnike!"
+    }
   }
 
 

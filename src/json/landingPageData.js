@@ -19,66 +19,58 @@ import Tarik from '../assets/images/Recenzije/Tarik.jpg';
 
 export const Services = [
   {
-    title: 'Knjigovodstvo',
+    key: 'knjigovodstvo',
     imageUrl: UIUX,
     animation: 'right',
   },
   {
-    title: 'Softverski inžinjering',
+    key: 'softver',
     imageUrl: Web,
     animation: 'left',
   },
   {
-    title: 'Poslovno savjetovanje',
+    key: 'savjetovanje',
     imageUrl: Mobile,
     animation: 'up',
   },
 ];
 
-
-
+// Advantages
 export const Advantages = [
-  [{
-    title: 'Komunikativni',
-    description: 'Otvoreno komuniciramo s klijentima i redovito ih informiramo o svemu što je važno.',
-    imageUrl: Communicative,
-  },
-  {
-    title: 'Upravljanje',
-    description: 'Profesionalno upravljamo svim knjigovodstvenim uslugama za vašu sigurnost i pouzdanost.',
-    imageUrl: Management,
-  }],
-  [{
-    title: 'Suradnja',
-    description: 'Naš tim usko surađuje kako bi sve vaše knjigovodstvene obaveze bile ispunjene na vrijeme.',
-    imageUrl: Collaborative,
-  },
-  {
-    title: 'Povjerenje klijenata',
-    description: 'Imamo brojne zadovoljne klijente koji nam već godinama ukazuju povjerenje.',
-    imageUrl: Favorite,
-  }],
+  [
+    {
+      key: 'komunikativni',
+      imageUrl: Communicative,
+    },
+    {
+      key: 'upravljanje',
+      imageUrl: Management,
+    },
+  ],
+  [
+    {
+      key: 'suradnja',
+      imageUrl: Collaborative,
+    },
+    {
+      key: 'povjerenje',
+      imageUrl: Favorite,
+    },
+  ],
 ];
 
-
+// Recenzije
 export const Recenzije = [
   {
-    id: 1,
-    name: 'Amra Hadžić',
-    testimoni: 'Hvala ekipi iz BS Biro, zaista ste profesionalni i ljubazni! Sve preporuke.',
-    imageUrl: Amra, 
+    key: 'amra',
+    imageUrl: Amra,
   },
   {
-    id: 2,
-    name: 'Tarik Šabanović',
-    testimoni: 'Suradnja s BS Biro je uvijek efikasna i bez stresa. Sve je transparentno i uredno.',
-    imageUrl: Tarik, 
+    key: 'tarik',
+    imageUrl: Tarik,
   },
   {
-    id: 3,
-    name: 'Lejla Karić',
-    testimoni: 'BS Biro nam je značajno olakšao poslovanje. Topla preporuka za sve poduzetnike!',
-    imageUrl: Lejla, 
+    key: 'lejla',
+    imageUrl: Lejla,
   },
 ];
-
