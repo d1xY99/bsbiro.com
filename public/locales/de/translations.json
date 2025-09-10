@@ -41,6 +41,21 @@
     "button": "Kontaktieren Sie uns",
     "desc": "Nehmen Sie Kontakt mit uns auf, und gemeinsam finden wir die beste Lösung für Ihr Unternehmen!"
   },
+  "discussForm": {
+      "title": "Anfrage senden",
+      "desc": "Bitte füllen Sie das untenstehende Formular aus, um uns Ihre Anfrage oder eine Beschreibung Ihres Anliegens zu senden. Wir werden Ihnen innerhalb von 24 Stunden antworten.",
+      "placeholder": {
+        "name": "Ihr Name",
+        "company": "Firmenname",
+        "email": "Ihre E-Mail-Adresse",
+        "phone": "Kontaktnummer",
+        "projectIdea": "Beschreiben Sie Ihre Anfrage oder Idee"
+      },
+      "send": "Senden",
+      "success": "Nachricht erfolgreich gesendet! Wir melden uns bald bei Ihnen. Vielen Dank!",
+      "error": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+      "required": "Bitte füllen Sie alle Felder aus."
+    },
   "footer": {
     "slogan": "Zuverlässigkeit, Präzision und moderne Unterstützung für Ihr Unternehmen",
     "contactTitle": "Kontakt",

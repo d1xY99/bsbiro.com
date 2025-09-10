@@ -41,6 +41,21 @@
     "button": "Contattaci",
     "desc": "Contattaci e insieme troveremo la soluzione migliore per la tua azienda!"
   },
+  "discussForm": {
+      "title": "Invia una richiesta",
+      "desc": "Compila il modulo qui sotto per inviarci la tua richiesta o descrivere il tuo bisogno. Ti risponderemo entro 24 ore.",
+      "placeholder": {
+        "name": "Il tuo nome",
+        "company": "Nome dell'azienda",
+        "email": "Il tuo indirizzo email",
+        "phone": "Numero di contatto",
+        "projectIdea": "Descrivi la tua richiesta o idea"
+      },
+      "send": "Invia",
+      "success": "Messaggio inviato con successo! Ti contatteremo presto. Grazie!",
+      "error": "Si è verificato un errore durante l'invio. Riprova.",
+      "required": "Compila tutti i campi."
+    },
   "footer": {
     "slogan": "Affidabilità, precisione e supporto moderno per la tua azienda",
     "contactTitle": "Contatto",

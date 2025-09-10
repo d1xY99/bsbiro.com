@@ -41,6 +41,21 @@
     "button": "Contact Us",
     "desc": "Reach out to us and together we'll find the best solution for your business!"
   },
+  "discussForm": {
+      "title": "Send an Inquiry",
+      "desc": "Please fill out the form below to send us your inquiry or describe your request. We will respond within 24 hours.",
+      "placeholder": {
+        "name": "Your name",
+        "company": "Company name",
+        "email": "Your email address",
+        "phone": "Contact number",
+        "projectIdea": "Describe your inquiry or idea"
+      },
+      "send": "Send",
+      "success": "Message successfully sent! We will get back to you soon. Thank you!",
+      "error": "An error occurred while sending. Please try again.",
+      "required": "Please fill out all fields."
+    },
   "footer": {
     "slogan": "Reliability, precision and modern support for your business",
     "contactTitle": "Contact",

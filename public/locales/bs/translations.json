@@ -41,6 +41,21 @@
     "button": "Kontaktirajte nas",
     "desc": "Javite nam se i zajedno ćemo pronaći najbolje rješenje za vaše poslovanje!"
   },
+  "discussForm": {
+    "title": "Pošaljite upit",
+    "desc": "Molimo ispunite obrazac ispod kako biste nam poslali upit ili opis vašeg zahtjeva. Odgovorit ćemo vam u roku 24 sata.",
+    "placeholder": {
+      "name": "Vaše ime",
+      "company": "Naziv firme",
+      "email": "Vaša e-mail adresa",
+      "phone": "Kontakt broj",
+      "projectIdea": "Opišite svoj upit ili ideju"
+    },
+    "send": "Pošalji",
+    "success": "Poruka je uspješno poslana! Javit ćemo vam se uskoro. Hvala!",
+    "error": "Došlo je do greške prilikom slanja. Pokušajte ponovno.",
+    "required": "Molimo ispunite sva polja."
+  },
   "footer": {
     "slogan": "Pouzdanost, preciznost i moderna podrška za vaše poslovanje",
     "contactTitle": "Kontakt",
@@ -75,66 +90,10 @@
     "username": "Korisničko ime",
     "password": "Lozinka",
     "login": "Prijava"
-  },
-
-
-
-
-
-
-
-  
-  "services_slike": {
-    "items": {
-      "0": {
-        "title": "Knjigovodstvooo"
-      },
-      "1": {
-        "title": "Softverski inžinjering"
-      },
-      "2": {
-        "title": "Poslovno savjetovanje"
-      }
-    }
-  },
-  "advantages_slike": {
-    "items": {
-      "0": [
-        {
-          "title": "Komunikativni",
-          "description": "Otvoreno komuniciramo s klijentima i redovito ih informiramo o svemu što je važno."
-        },
-        {
-          "title": "Upravljanje",
-          "description": "Profesionalno upravljamo svim knjigovodstvenim uslugama za vašu sigurnost i pouzdanost."
-        }
-      ],
-      "1": [
-        {
-          "title": "Suradnja",
-          "description": "Naš tim usko surađuje kako bi sve vaše knjigovodstvene obaveze bile ispunjene na vrijeme."
-        },
-        {
-          "title": "Povjerenje klijenata",
-          "description": "Imamo brojne zadovoljne klijente koji nam već godinama ukazuju povjerenje."
-        }
-      ]
-    }
-  },
-  "testimonials_slike": {
-    "items": {
-      "0": {
-        "name": "Amra Hadžić",
-        "testimoni": "Hvala ekipi iz BS Biro, zaista ste profesionalni i ljubazni! Sve preporuke."
-      },
-      "1": {
-        "name": "Tarik Šabanović",
-        "testimoni": "Suradnja s BS Biro je uvijek efikasna i bez stresa. Sve je transparentno i uredno."
-      },
-      "2": {
-        "name": "Lejla Karić",
-        "testimoni": "BS Biro nam je značajno olakšao poslovanje. Topla preporuka za sve poduzetnike!"
-      }
-    }
   }
+
+
+
+
+
 }
