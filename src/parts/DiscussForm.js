@@ -8,14 +8,51 @@ import { useTranslation } from 'react-i18next';
 import { Form } from 'elements/Form';
 import Button from 'elements/Button';
 
+const FIRMA_INFO = {
+  mail: 'bsbiro@hotmail.com',
+  phone: '(+387) 061-736-613',
+  address: 'Adolfa Goldbergera 9',
+  city: 'Zenica, Bosna i Hercegovina',
+};
+
+function FirmaInfoBox() {
+  const { t } = useTranslation();
+  return (
+    <Fade direction="left" triggerOnce>
+      <div className="bg-white rounded-2xl shadow-lg p-8 mb-10 md:mb-0 md:mr-8 w-full max-w-md">
+        <h2 className="text-3xl font-bold text-theme-blue mb-6">{t('discussForm.contactTitle') || 'Kontakt podaci'}</h2>
+        <div className="mb-4">
+          <span className="block text-lg text-gray-700 font-semibold">Senad Bašić, BS Biro Zenica</span>
+          <span className="block text-gray-500"></span>
+        </div>
+        <div className="mb-4">
+          <span className="block text-lg text-gray-700 font-semibold">{t('discussForm.address')}</span>
+          <span className="block text-gray-500">{FIRMA_INFO.address}, {FIRMA_INFO.city}</span>
+        </div>
+        <div className="mb-4">
+          <span className="block text-lg text-gray-700 font-semibold">{t('discussForm.phone')}</span>
+          <span className="block text-gray-500">{FIRMA_INFO.phone}</span>
+        </div>
+        <div className="mb-4">
+          <span className="block text-lg text-gray-700 font-semibold">{t('discussForm.email')}</span>
+          <span className="block text-gray-500">{FIRMA_INFO.mail}</span>
+        </div>
+        <div>
+          <span className="block text-lg text-gray-700 font-semibold">{t('discussForm.workHours')}</span>
+          <span className="block text-gray-500">{t('discussForm.workHoursValue')}</span>
+        </div>
+      </div>
+    </Fade>
+  );
+}
+
 export const DiscussForm = (actions) => {
   const { t } = useTranslation();
   const { data, resetForm } = actions;
-  const [loading, setLoading] = useState(false); 
+  const [loading, setLoading] = useState(false);
 
   const submitEmail = () => {
     const { name, company, email, phone, projectIdea } = data;
-
     const templateParams = {
       from_name: name,
       company: company,
@@ -31,7 +68,7 @@ export const DiscussForm = (actions) => {
       && phone !== ''
       && projectIdea !== ''
     ) {
-      setLoading(true); 
+      setLoading(true);
 
       emailjs.send(
         'service_gyvr2z9',
@@ -46,7 +83,7 @@ export const DiscussForm = (actions) => {
           toast.error(t('discussForm.error'));
         })
         .finally(() => {
-          setLoading(false); 
+          setLoading(false);
         });
     } else {
       toast.error(t('discussForm.required'));
@@ -54,8 +91,7 @@ export const DiscussForm = (actions) => {
   };
 
   return (
-    <section className="flex flex-col container mx-auto mt-10 justify-center">
-
+    <section className="flex flex-col items-center container mx-auto mt-10">
       <Fade direction="down" triggerOnce>
         <h1 className="text-5xl text-theme-blue text-center font-bold">{t('discussForm.title')}</h1>
       </Fade>
@@ -66,7 +102,13 @@ export const DiscussForm = (actions) => {
         </p>
       </Fade>
 
-      <Fade direction="up" triggerOnce>
+      {/* Dvostrani layout */}
+      <div className="flex flex-col md:flex-row w-full justify-center items-stretch gap-8">
+        {/* Lijeva strana: Info o firmi */}
+        <FirmaInfoBox />
+
+        {/* Desna strana: Kontakt forma */}
+       <Fade direction="up" triggerOnce>
         <div className="flex flex-col">
           <div className="flex flex-col sm:flex-row mx-auto">
             <Form
@@ -147,9 +189,8 @@ export const DiscussForm = (actions) => {
           </Button>
         </div>
       </Fade>
-
+      </div>
       <ToastContainer />
-
     </section>
   );
 };
