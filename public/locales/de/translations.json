@@ -1,0 +1,79 @@
+{
+  "menu": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "cloud": "Cloud",
+    "contact": "Kontakt"
+  },
+  "advantage": {
+    "title": "Warum uns wählen",
+    "subtitle": "Erfahren Sie, warum wir die richtige Wahl für Ihre Buchhaltungsbedürfnisse sind.",
+    "items": {
+      "0": [
+        {
+          "title": "Schnelle und präzise Verarbeitung",
+          "description": "Wir garantieren eine effiziente und präzise Bearbeitung all Ihrer Finanzdaten."
+        },
+        {
+          "title": "Erfahrene Experten",
+          "description": "Unser Team besteht aus zertifizierten und erfahrenen Buchhaltern."
+        }
+      ],
+      "1": [
+        {
+          "title": "Volle Transparenz",
+          "description": "Alle unsere Dienstleistungen sind völlig transparent und auf Ihre Bedürfnisse zugeschnitten."
+        },
+        {
+          "title": "Kundensupport",
+          "description": "Wir stehen Ihnen das ganze Jahr über für alle Ihre Fragen und Beratungen zur Verfügung."
+        }
+      ]
+    }
+  },
+  "cloudInfo": {
+    "title": "Zugriff auf Dokumente in der Cloud",
+    "desc": "Unsere Kunden können sicher auf ihre Geschäftsunterlagen und Berichte über unsere Online-Plattform zugreifen. Melden Sie sich bei Ihrem <b>Cloud-Konto</b> an und laden Sie die benötigten Dateien jederzeit und von jedem Ort herunter.<br /><br />Verwenden Sie den Benutzernamen und das Passwort, die Ihnen von unserem Team zur Verfügung gestellt wurden, um auf Ihr Cloud-Profil zuzugreifen. Bei Schwierigkeiten beim Zugriff kontaktieren Sie uns für Unterstützung.",
+    "login": "Cloud-Anmeldung"
+  },
+  "discuss": {
+    "title": "Haben Sie eine Idee oder benötigen Sie Unterstützung in der Buchhaltung?",
+    "button": "Kontaktieren Sie uns",
+    "desc": "Nehmen Sie Kontakt mit uns auf, und gemeinsam finden wir die beste Lösung für Ihr Unternehmen!"
+  },
+  "footer": {
+    "slogan": "Zuverlässigkeit, Präzision und moderne Unterstützung für Ihr Unternehmen",
+    "contactTitle": "Kontakt",
+    "email": "bsbiro@hotmail.com",
+    "phone": "(+387) 061-736-613",
+    "address1": "Adolf Goldberger 9",
+    "address2": "Zenica, Bosnien und Herzegowina",
+    "locationTitle": "Standort",
+    "copyright": "Alle Rechte vorbehalten - Amir Bašić",
+    "scrollTop": "Zum Seitenanfang"
+  },
+  "hero": {
+    "title": "Innovative Lösungen <br />für Ihre Buchhaltung",
+    "desc": "Wir sind spezialisiert auf Buchhaltungsdienstleistungen und Unternehmensdigitalisierung.<br />Unsere Expertise in der Buchhaltung wird durch innovative Softwarelösungen ergänzt, die Ihre Finanzprozesse einfacher und automatisierter machen.",
+    "cta": "Kontaktieren Sie uns!"
+  },
+  "about": {
+    "title": "Über uns",
+    "desc": "BS Biro ist eine moderne Buchhaltungsagentur aus Zenica, die sich der Bereitstellung zuverlässiger und professioneller Unterstützung für alle unsere Kunden widmet. Unser Team kombiniert Wissen aus Buchhaltung und Softwareentwicklung, um Ihnen präzise, effiziente und digitalisierte Geschäftsprozesse zu ermöglichen.<br /><br />Unser Ziel ist es, Ihre täglichen Aufgaben zu erleichtern, Prozesse zu automatisieren und die Transparenz und Sicherheit Ihrer Finanzen zu gewährleisten. Wir gehen auf jeden Kunden individuell ein und bieten Lösungen, die auf Ihre geschäftlichen Bedürfnisse zugeschnitten sind.<br /><br />Wir passen unsere Arbeit an jeden Kunden an und bieten flexible und individuelle Lösungen für Ihr Unternehmen. Unser Ziel ist es, klare Beratung und hochwertige monatliche Dienstleistungen auf einfache und verständliche Weise zu bieten, immer mit fairer und transparenter Preisgestaltung. Wir bauen unsere Expertise durch kontinuierliche Weiterbildung und das Verfolgen der neuesten Trends in Buchhaltung und Technologie auf.<br /><br />Wir sind uns der Sensibilität der Daten, mit denen wir arbeiten, bewusst und legen daher besonderen Wert auf die Sicherheit und Vertraulichkeit all Ihrer Dokumente. Das Vertrauen und die Loyalität unserer Kunden sind für uns der größte Wert unseres Unternehmens.<br /><br />Dank einer positiven Atmosphäre und Hingabe innerhalb unseres Teams können wir Ihre Anfragen leicht beantworten und streben danach, unseren Service jeden Tag zu verbessern."
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "desc": "Wir helfen Ihnen, Ihr Unternehmen durch Buchhaltungs- und Software-Dienstleistungen zu verbessern, die auf Ihre Bedürfnisse zugeschnitten sind."
+  },
+  "testimonials": {
+    "title": "Kundenerfahrungen",
+    "desc": "Lesen Sie, was Kunden über die Zusammenarbeit mit uns sagen."
+  },
+  "cloudLogin": {
+    "back": "Zurück zur Startseite",
+    "title": "Cloud-Anmeldung",
+    "username": "Benutzername",
+    "password": "Passwort",
+    "login": "Anmelden"
+  }
+}

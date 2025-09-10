@@ -1,8 +1,10 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import BrandIcon from './BrandIcon';
-import Button from '../elements/Button';
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   // Funkcija za povratak na vrh
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -15,29 +17,29 @@ export default function Footer() {
           <div className="w-1/3 flex-col ml-16 mr-8">
             <BrandIcon />
             <p className="w-full text-lg text-gray-400 font-light">
-              Pouzdanost, preciznost i moderna podrška za vaše poslovanje
+              {t('footer.slogan')}
             </p>
           </div>
           <div className="w-1/3 mt-0 ml-16 mr-0 sm:ml-0 sm:mr-5">
             <h1 className="text-lg text-theme-blue pt-4 pb-2">
-              Kontakt
+              {t('footer.contactTitle')}
             </h1>
             <p className="text-lg text-gray-400 font-light">
-              bsbiro@hotmail.com
+              {t('footer.email')}
             </p>
             <p className="text-lg text-gray-400 font-light">
-              (+387) 061-736-613
+              {t('footer.phone')}
             </p>
             <p className="text-lg text-gray-400 font-light">
-              Adolfa Goldbergera 9
+              {t('footer.address1')}
             </p>
             <p className="text-lg text-gray-400 font-light">
-              Zenica, Bosna i Hercegovina
+              {t('footer.address2')}
             </p>
           </div>
           <div className="w-1/3 ml-16 sm:ml-0 mt-0">
             <h1 className="text-lg text-theme-blue pt-4 pb-2">
-              Lokacija
+              {t('footer.locationTitle')}
             </h1>
             <div className="rounded-xl overflow-hidden shadow-lg border border-gray-200">
               <iframe
@@ -55,7 +57,7 @@ export default function Footer() {
         </div>
         <div className="flex-col text-center mt-7">
           <p className="text-lg text-gray-400 font-light">
-            Copyright {new Date().getFullYear()} - Sva prava zadržana - Amir Bašić
+            Copyright {new Date().getFullYear()} - {t('footer.copyright')}
           </p>
         </div>
       </div>
@@ -63,7 +65,7 @@ export default function Footer() {
       <button
         onClick={scrollToTop}
         className="fixed bottom-6 right-6 z-50 bg-theme-light-blue text-white rounded-full shadow-lg p-3 hover:bg-theme-blue transition"
-        aria-label="Idi na vrh stranice"
+        aria-label={t('footer.scrollTop')}
       >
         {/* SVG strelica prema gore */}
         <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
