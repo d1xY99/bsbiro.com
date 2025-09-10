@@ -22,7 +22,7 @@ function FirmaInfoBox() {
       <div className="bg-white rounded-2xl shadow-lg p-8 mb-10 md:mb-0 md:mr-8 w-full max-w-md">
         <h2 className="text-3xl font-bold text-theme-blue mb-6">{t('discussForm.contactTitle') || 'Kontakt podaci'}</h2>
         <div className="mb-4">
-          <span className="block text-lg text-gray-700 font-semibold">Senad Bašić, BS Biro Zenica</span>
+          <span className="block text-lg text-gray-700 font-semibold">Dipl. Ing. Senad Bašić, BS Biro Zenica</span>
           <span className="block text-gray-500"></span>
         </div>
         <div className="mb-4">
