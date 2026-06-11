@@ -80,7 +80,7 @@
     "title": "Inovativna rješenja <br />za vaše knjigovodstvo",
     "titleLine1": "Inovativna rješenja",
     "titleLine2": "za vaše knjigovodstvo",
-    "badge": "Knjigovodstvena agencija — Zenica",
+    "badge": "Knjigovodstveni Servis - Zenica",
     "desc": "Specijalizirani smo za knjigovodstvene usluge i digitalizaciju poslovanja.<br />Naša stručnost u knjigovodstvu dodatno je unaprijeđena inovativnim softverskim rješenjima, čime olakšavamo i automatiziramo vaše financijske procese.",
     "cta": "Kontaktirajte nas",
     "cta2": "Naše usluge",
@@ -148,15 +148,18 @@
   "testimonialsItems": {
     "amra": {
       "name": "Amra Hadžić",
-      "testimoni": "Hvala ekipi iz BS Biro, zaista ste profesionalni i ljubazni! Sve preporuke."
+      "role": "Vlasnica trgovinske radnje",
+      "testimoni": "Sa BS Biro sarađujem već treću godinu. Obračun plata i PDV prijave uvijek su gotovi prije roka, a na svako pitanje dobijem odgovor isti dan."
     },
     "tarik": {
       "name": "Tarik Šabanović",
-      "testimoni": "Suradnja s BS Biro je uvijek efikasna i bez stresa. Sve je transparentno i uredno."
+      "role": "Direktor d.o.o.",
+      "testimoni": "Kad smo otvarali firmu, proveli su nas kroz cijelu registraciju i postavili knjigovodstvo od nule. Danas sve dokumente razmjenjujemo preko clouda — bez papirologije."
     },
     "lejla": {
       "name": "Lejla Karić",
-      "testimoni": "BS Biro nam je značajno olakšao poslovanje. Topla preporuka za sve poduzetnike!"
+      "role": "Samostalna poduzetnica",
+      "testimoni": "Prešla sam kod njih nakon loših iskustava sa prethodnim knjigovođom. Razlika je ogromna — sve je transparentno, a cijena dogovorena unaprijed, bez iznenađenja."
     }
   }
 

@@ -4,7 +4,7 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { Float, Sparkles, RoundedBox } from '@react-three/drei';
 
 // Zlatna kovanica
-function Coin({ position = [0, 0, 0], rotation = [0, 0, 0], scale = 1 }) {
+export function Coin({ position = [0, 0, 0], rotation = [0, 0, 0], scale = 1 }) {
   return (
     <group position={position} rotation={rotation} scale={scale}>
       <mesh castShadow>

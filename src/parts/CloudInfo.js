@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import heroPortfolio from 'assets/images/hero/cloud.png';
+import CloudScene3D from './CloudScene3D';
 
 export default function CloudInfo() {
   const { t } = useTranslation();
@@ -47,8 +47,8 @@ export default function CloudInfo() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="w-full lg:w-1/2"
         >
-          <div className="glass-card p-4 animate-float-slow">
-            <img src={heroPortfolio} alt="Cloud pristup" className="rounded-2xl w-full" />
+          <div className="glass-card overflow-hidden">
+            <CloudScene3D className="w-full h-[420px] xl:h-[500px]" />
           </div>
         </motion.div>
       </div>

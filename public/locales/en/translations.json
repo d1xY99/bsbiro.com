@@ -43,28 +43,27 @@
     "desc": "Reach out to us and together we'll find the best solution for your business!"
   },
   "discussForm": {
-      "title": "Send an Inquiry",
-      "desc": "Please fill out the form below to send us your inquiry or describe your request. We will respond within 24 hours.",
-      "placeholder": {
-        "name": "Your name",
-        "company": "Company name",
-        "email": "Your email address",
-        "phone": "Contact number",
-        "projectIdea": "Describe your inquiry or idea"
-      },
-      "send": "Send",
-      "success": "Message successfully sent! We will get back to you soon. Thank you!",
-      "error": "An error occurred while sending. Please try again.",
-      "required": "Please fill out all fields.",
-      "contactTitle": "Contact Information",
-      "company": "Company",
-      "address": "Address",
-      "phone": "Phone",
-      "email": "E-mail",
-      "workHours": "Working hours",
-        "workHoursValue": "Mon-Fri: 8:00 AM - 4:00 PM"
-
+    "title": "Send an Inquiry",
+    "desc": "Please fill out the form below to send us your inquiry or describe your request. We will respond within 24 hours.",
+    "placeholder": {
+      "name": "Your name",
+      "company": "Company name",
+      "email": "Your email address",
+      "phone": "Contact number",
+      "projectIdea": "Describe your inquiry or idea"
     },
+    "send": "Send",
+    "success": "Message successfully sent! We will get back to you soon. Thank you!",
+    "error": "An error occurred while sending. Please try again.",
+    "required": "Please fill out all fields.",
+    "contactTitle": "Contact Information",
+    "company": "Company",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "E-mail",
+    "workHours": "Working hours",
+    "workHoursValue": "Mon-Fri: 8:00 AM - 4:00 PM"
+  },
   "footer": {
     "slogan": "Reliability, precision and modern support for your business",
     "contactTitle": "Contact",
@@ -80,7 +79,7 @@
     "title": "Innovative solutions <br />for your accounting",
     "titleLine1": "Innovative solutions",
     "titleLine2": "for your accounting",
-    "badge": "Accounting agency — Zenica",
+    "badge": "Accounting Service - Zenica",
     "desc": "We specialize in accounting services and business digitalization.<br />Our expertise in accounting is further enhanced by innovative software solutions, making your financial processes easier and more automated.",
     "cta": "Contact us!",
     "cta2": "Our services",
@@ -113,7 +112,7 @@
     "password": "Password",
     "login": "Login"
   },
-   "servicesItems": {
+  "servicesItems": {
     "knjigovodstvo": {
       "title": "Accounting",
       "description": "Complete bookkeeping, payroll processing, VAT returns and annual financial statements — accurate and on time."
@@ -148,15 +147,18 @@
   "testimonialsItems": {
     "amra": {
       "name": "Amra Hadžić",
-      "testimoni": "Thank you to the BS Biro team, you are truly professional and kind! Highly recommended."
+      "testimoni": "I've been working with BS Biro for three years now. Payroll and VAT returns are always ready ahead of the deadline, and I get an answer to every question the same day.",
+      "role": "Owner of a retail shop"
     },
     "tarik": {
       "name": "Tarik Šabanović",
-      "testimoni": "Working with BS Biro is always efficient and stress-free. Everything is transparent and organized."
+      "testimoni": "When we started our company, they guided us through the entire registration and set up the bookkeeping from scratch. Today we exchange all documents through the cloud — no paperwork.",
+      "role": "Managing director (LLC)"
     },
     "lejla": {
       "name": "Lejla Karić",
-      "testimoni": "BS Biro has greatly simplified our business. Warm recommendation for all entrepreneurs!"
+      "testimoni": "I switched to them after bad experiences with my previous accountant. The difference is huge — everything is transparent and the price agreed upfront, with no surprises.",
+      "role": "Independent entrepreneur"
     }
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import Team from 'assets/images/hero/team.png';
+import AboutScene3D from './AboutScene3D';
 
 export default function Informacije() {
   const { t } = useTranslation();
@@ -34,8 +34,8 @@ export default function Informacije() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="w-full lg:w-2/5 lg:sticky lg:top-32"
         >
-          <div className="glass-card p-4 animate-float-slow">
-            <img src={Team} alt={t('about.title')} className="rounded-2xl w-full" />
+          <div className="glass-card overflow-hidden">
+            <AboutScene3D className="w-full h-[420px] xl:h-[500px]" />
           </div>
         </motion.div>
       </div>

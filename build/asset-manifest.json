@@ -1,14 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.e85f44e4.css",
-    "main.js": "/static/js/main.e29cdda0.js",
+    "main.css": "/static/css/main.56e9ed2b.css",
+    "main.js": "/static/js/main.5cbb946b.js",
     "static/js/38.1ac8dc8e.chunk.js": "/static/js/38.1ac8dc8e.chunk.js",
     "static/js/453.f845e572.chunk.js": "/static/js/453.f845e572.chunk.js",
-    "static/media/team.png": "/static/media/team.84949ea5dbf787761fe6.png",
     "static/media/Lejla.jpg": "/static/media/Lejla.7fd76bf62d1e9cf9501e.jpg",
     "static/media/Web.png": "/static/media/Web.9e0487c3018deeb71745.png",
     "static/media/Design.png": "/static/media/Design.8dda9f3188afb8d7d79d.png",
-    "static/media/cloud.png": "/static/media/cloud.e56ade445c1677c793c5.png",
     "static/media/Mobile.png": "/static/media/Mobile.d82aed1b215ff39e60a6.png",
     "static/media/logo.png": "/static/media/logo.8e07dbe8a90cd660ff2e.png",
     "static/media/Amra.jpg": "/static/media/Amra.d03a2982978ba6c1ad59.jpg",
@@ -18,13 +16,13 @@
     "static/media/Communicative.png": "/static/media/Communicative.eba258160f4e17106ad0.png",
     "static/media/Favorite.png": "/static/media/Favorite.cb968fa8bc7d31037eb0.png",
     "index.html": "/index.html",
-    "main.e85f44e4.css.map": "/static/css/main.e85f44e4.css.map",
-    "main.e29cdda0.js.map": "/static/js/main.e29cdda0.js.map",
+    "main.56e9ed2b.css.map": "/static/css/main.56e9ed2b.css.map",
+    "main.5cbb946b.js.map": "/static/js/main.5cbb946b.js.map",
     "38.1ac8dc8e.chunk.js.map": "/static/js/38.1ac8dc8e.chunk.js.map",
     "453.f845e572.chunk.js.map": "/static/js/453.f845e572.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e85f44e4.css",
-    "static/js/main.e29cdda0.js"
+    "static/css/main.56e9ed2b.css",
+    "static/js/main.5cbb946b.js"
   ]
 }

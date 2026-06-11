@@ -43,28 +43,27 @@
     "desc": "Contattaci e insieme troveremo la soluzione migliore per la tua azienda!"
   },
   "discussForm": {
-      "title": "Invia una richiesta",
-      "desc": "Compila il modulo qui sotto per inviarci la tua richiesta o descrivere il tuo bisogno. Ti risponderemo entro 24 ore.",
-      "placeholder": {
-        "name": "Il tuo nome",
-        "company": "Nome dell'azienda",
-        "email": "Il tuo indirizzo email",
-        "phone": "Numero di contatto",
-        "projectIdea": "Descrivi la tua richiesta o idea"
-      },
-      "send": "Invia",
-      "success": "Messaggio inviato con successo! Ti contatteremo presto. Grazie!",
-      "error": "Si è verificato un errore durante l'invio. Riprova.",
-      "required": "Compila tutti i campi.",
-        "contactTitle": "Dati di contatto",
-        "company": "Azienda",
-        "address": "Indirizzo",
-        "phone": "Telefono",
-        "email": "E-mail",
-        "workHours": "Orario di lavoro",
-        "workHoursValue": "Lun-Ven: 8:00 - 16:00"
-
+    "title": "Invia una richiesta",
+    "desc": "Compila il modulo qui sotto per inviarci la tua richiesta o descrivere il tuo bisogno. Ti risponderemo entro 24 ore.",
+    "placeholder": {
+      "name": "Il tuo nome",
+      "company": "Nome dell'azienda",
+      "email": "Il tuo indirizzo email",
+      "phone": "Numero di contatto",
+      "projectIdea": "Descrivi la tua richiesta o idea"
     },
+    "send": "Invia",
+    "success": "Messaggio inviato con successo! Ti contatteremo presto. Grazie!",
+    "error": "Si è verificato un errore durante l'invio. Riprova.",
+    "required": "Compila tutti i campi.",
+    "contactTitle": "Dati di contatto",
+    "company": "Azienda",
+    "address": "Indirizzo",
+    "phone": "Telefono",
+    "email": "E-mail",
+    "workHours": "Orario di lavoro",
+    "workHoursValue": "Lun-Ven: 8:00 - 16:00"
+  },
   "footer": {
     "slogan": "Affidabilità, precisione e supporto moderno per la tua azienda",
     "contactTitle": "Contatto",
@@ -80,7 +79,7 @@
     "title": "Soluzioni innovative <br />per la tua contabilità",
     "titleLine1": "Soluzioni innovative",
     "titleLine2": "per la tua contabilità",
-    "badge": "Agenzia di contabilità — Zenica",
+    "badge": "Servizio di Contabilità - Zenica",
     "desc": "Siamo specializzati in servizi contabili e digitalizzazione aziendale.<br />La nostra competenza in contabilità è ulteriormente rafforzata da soluzioni software innovative, rendendo i tuoi processi finanziari più semplici e automatizzati.",
     "cta": "Contattaci!",
     "cta2": "I nostri servizi",
@@ -113,7 +112,7 @@
     "password": "Password",
     "login": "Accedi"
   },
-   "servicesItems": {
+  "servicesItems": {
     "knjigovodstvo": {
       "title": "Contabilità",
       "description": "Gestione completa dei libri contabili, elaborazione delle buste paga, dichiarazioni IVA e bilanci annuali — con precisione e puntualità."
@@ -148,15 +147,18 @@
   "testimonialsItems": {
     "amra": {
       "name": "Amra Hadžić",
-      "testimoni": "Grazie al team di BS Biro, siete davvero professionali e cordiali! Consigliatissimi."
+      "testimoni": "Collaboro con BS Biro ormai da tre anni. Le buste paga e le dichiarazioni IVA sono sempre pronte prima della scadenza, e a ogni domanda ricevo risposta in giornata.",
+      "role": "Titolare di un negozio al dettaglio"
     },
     "tarik": {
       "name": "Tarik Šabanović",
-      "testimoni": "Collaborare con BS Biro è sempre efficiente e senza stress. Tutto è trasparente e ordinato."
+      "testimoni": "Quando abbiamo aperto l'azienda ci hanno guidato in tutta la registrazione e impostato la contabilità da zero. Oggi scambiamo tutti i documenti tramite il cloud — senza scartoffie.",
+      "role": "Direttore di una S.r.l."
     },
     "lejla": {
       "name": "Lejla Karić",
-      "testimoni": "BS Biro ha semplificato notevolmente la nostra attività. Un caloroso consiglio a tutti gli imprenditori!"
+      "testimoni": "Sono passata a loro dopo brutte esperienze con il mio contabile precedente. La differenza è enorme — tutto è trasparente e il prezzo concordato in anticipo, senza sorprese.",
+      "role": "Imprenditrice autonoma"
     }
   }
 }

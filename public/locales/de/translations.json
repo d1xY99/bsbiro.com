@@ -43,28 +43,27 @@
     "desc": "Nehmen Sie Kontakt mit uns auf, und gemeinsam finden wir die beste Lösung für Ihr Unternehmen!"
   },
   "discussForm": {
-      "title": "Anfrage senden",
-      "desc": "Bitte füllen Sie das untenstehende Formular aus, um uns Ihre Anfrage oder eine Beschreibung Ihres Anliegens zu senden. Wir werden Ihnen innerhalb von 24 Stunden antworten.",
-      "placeholder": {
-        "name": "Ihr Name",
-        "company": "Firmenname",
-        "email": "Ihre E-Mail-Adresse",
-        "phone": "Kontaktnummer",
-        "projectIdea": "Beschreiben Sie Ihre Anfrage oder Idee"
-      },
-      "send": "Senden",
-      "success": "Nachricht erfolgreich gesendet! Wir melden uns bald bei Ihnen. Vielen Dank!",
-      "error": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
-      "required": "Bitte füllen Sie alle Felder aus.",
-      "contactTitle": "Kontaktdaten",
-      "company": "Firma",
-      "address": "Adresse",
-      "phone": "Telefon",
-      "email": "E-Mail",
-      "workHours": "Arbeitszeiten",
-      "workHoursValue": "Mo-Fr: 8:00 - 16:00"
-
+    "title": "Anfrage senden",
+    "desc": "Bitte füllen Sie das untenstehende Formular aus, um uns Ihre Anfrage oder eine Beschreibung Ihres Anliegens zu senden. Wir werden Ihnen innerhalb von 24 Stunden antworten.",
+    "placeholder": {
+      "name": "Ihr Name",
+      "company": "Firmenname",
+      "email": "Ihre E-Mail-Adresse",
+      "phone": "Kontaktnummer",
+      "projectIdea": "Beschreiben Sie Ihre Anfrage oder Idee"
     },
+    "send": "Senden",
+    "success": "Nachricht erfolgreich gesendet! Wir melden uns bald bei Ihnen. Vielen Dank!",
+    "error": "Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+    "required": "Bitte füllen Sie alle Felder aus.",
+    "contactTitle": "Kontaktdaten",
+    "company": "Firma",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "workHours": "Arbeitszeiten",
+    "workHoursValue": "Mo-Fr: 8:00 - 16:00"
+  },
   "footer": {
     "slogan": "Zuverlässigkeit, Präzision und moderne Unterstützung für Ihr Unternehmen",
     "contactTitle": "Kontakt",
@@ -80,7 +79,7 @@
     "title": "Innovative Lösungen <br />für Ihre Buchhaltung",
     "titleLine1": "Innovative Lösungen",
     "titleLine2": "für Ihre Buchhaltung",
-    "badge": "Buchhaltungsagentur — Zenica",
+    "badge": "Buchhaltungsservice - Zenica",
     "desc": "Wir sind spezialisiert auf Buchhaltungsdienstleistungen und Unternehmensdigitalisierung.<br />Unsere Expertise in der Buchhaltung wird durch innovative Softwarelösungen ergänzt, die Ihre Finanzprozesse einfacher und automatisierter machen.",
     "cta": "Kontaktieren Sie uns!",
     "cta2": "Unsere Dienstleistungen",
@@ -113,7 +112,7 @@
     "password": "Passwort",
     "login": "Anmelden"
   },
-   "servicesItems": {
+  "servicesItems": {
     "knjigovodstvo": {
       "title": "Buchhaltung",
       "description": "Komplette Führung der Geschäftsbücher, Lohnabrechnung, Umsatzsteuererklärungen und Jahresabschlüsse — präzise und pünktlich."
@@ -148,16 +147,18 @@
   "testimonialsItems": {
     "amra": {
       "name": "Amra Hadžić",
-      "testimoni": "Vielen Dank an das BS Biro Team, ihr seid wirklich professionell und freundlich! Klare Empfehlung."
+      "testimoni": "Ich arbeite nun schon im dritten Jahr mit BS Biro. Lohnabrechnung und Mehrwertsteuererklärungen sind immer vor der Frist fertig, und auf jede Frage bekomme ich noch am selben Tag eine Antwort.",
+      "role": "Inhaberin eines Einzelhandelsgeschäfts"
     },
     "tarik": {
       "name": "Tarik Šabanović",
-      "testimoni": "Die Zusammenarbeit mit BS Biro ist immer effizient und stressfrei. Alles ist transparent und ordentlich."
+      "testimoni": "Bei der Firmengründung haben sie uns durch die gesamte Registrierung begleitet und die Buchhaltung von Grund auf aufgebaut. Heute tauschen wir alle Dokumente über die Cloud aus — ganz ohne Papierkram.",
+      "role": "Geschäftsführer (GmbH)"
     },
     "lejla": {
       "name": "Lejla Karić",
-      "testimoni": "BS Biro hat unser Geschäft erheblich erleichtert. Eine warme Empfehlung für alle Unternehmer!"
+      "testimoni": "Ich bin nach schlechten Erfahrungen mit meinem früheren Buchhalter zu ihnen gewechselt. Der Unterschied ist enorm — alles ist transparent und der Preis im Voraus vereinbart, ohne Überraschungen.",
+      "role": "Selbstständige Unternehmerin"
     }
   }
-
 }
