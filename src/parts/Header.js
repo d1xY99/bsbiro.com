@@ -68,7 +68,7 @@ export default function Header() {
           scrolled ? 'glass shadow-lg shadow-black/20' : 'bg-transparent border-transparent'
         }`}
       >
-        <div className="container mx-auto px-5 lg:px-10 flex items-center justify-between h-20">
+        <div className="container mx-auto px-5 lg:px-10 flex items-center justify-between h-24">
           <BrandIcon />
 
           {/* DESKTOP MENU */}
