@@ -110,9 +110,7 @@ function BalanceScale() {
 
 function SceneContent() {
   const group = useRef();
-  useMouseParallax(group, {
-    rotY: 0.45, rotX: 0.25, posX: 0.3, posY: 0.2,
-  });
+  useMouseParallax(group, { rotY: 0.2, rotX: 0.12 });
 
   return (
     <>

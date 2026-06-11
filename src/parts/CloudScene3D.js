@@ -125,9 +125,7 @@ function UploadArrow() {
 
 function SceneContent() {
   const group = useRef();
-  useMouseParallax(group, {
-    rotY: 0.4, rotX: 0.22, posX: 0.3, posY: 0.2,
-  });
+  useMouseParallax(group, { rotY: 0.2, rotX: 0.12 });
 
   return (
     <>

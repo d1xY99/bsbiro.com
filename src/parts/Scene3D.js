@@ -2,81 +2,45 @@
 import React, { Suspense, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Float, Sparkles, RoundedBox } from '@react-three/drei';
-import useMouseParallax from './useMouseParallax';
 
-// Zlatna kovanica — sjajni tanki disk, reljefni prsten, nazubljeni rub
-// lica (kao na pravoj kovanici) i centralni reljef
-const COIN_NOTCHES = Array.from({ length: 16 }, (_, i) => (i / 16) * Math.PI * 2);
-
+// Zlatna kovanica — čist dvotonski novčić: sjajni vanjski prsten,
+// mat unutrašnje polje i polirani rub
 export function Coin({ position = [0, 0, 0], rotation = [0, 0, 0], scale = 1 }) {
   return (
     <group position={position} rotation={rotation} scale={scale}>
-      {/* tijelo */}
+      {/* tijelo / vanjski prsten */}
       <mesh castShadow>
-        <cylinderGeometry args={[0.55, 0.55, 0.08, 48]} />
+        <cylinderGeometry args={[0.55, 0.55, 0.07, 48]} />
         <meshStandardMaterial
           color="#fbbf24"
-          metalness={0.85}
-          roughness={0.18}
+          metalness={0.9}
+          roughness={0.15}
           emissive="#d97706"
-          emissiveIntensity={0.3}
+          emissiveIntensity={0.25}
         />
       </mesh>
-      {/* obruč po rubu */}
-      <mesh rotation={[Math.PI / 2, 0, 0]}>
-        <torusGeometry args={[0.55, 0.035, 16, 48]} />
+      {/* unutrašnje polje — tamnije, mat */}
+      <mesh>
+        <cylinderGeometry args={[0.4, 0.4, 0.074, 48]} />
         <meshStandardMaterial
-          color="#f59e0b"
-          metalness={0.9}
-          roughness={0.2}
+          color="#d97706"
+          metalness={0.75}
+          roughness={0.35}
           emissive="#92400e"
           emissiveIntensity={0.3}
         />
       </mesh>
-      {/* detalji lica — s obje strane */}
-      {[0.046, -0.046].map((y) => (
-        <group key={y} position={[0, y, 0]}>
-          {/* reljefni prsten */}
-          <mesh rotation={[Math.PI / 2, 0, 0]}>
-            <torusGeometry args={[0.4, 0.016, 12, 48]} />
-            <meshStandardMaterial
-              color="#fde68a"
-              metalness={0.7}
-              roughness={0.2}
-              emissive="#f59e0b"
-              emissiveIntensity={0.45}
-            />
-          </mesh>
-          {/* zarezi po rubu lica */}
-          {COIN_NOTCHES.map((a) => (
-            <mesh
-              key={a}
-              position={[Math.cos(a) * 0.485, 0, Math.sin(a) * 0.485]}
-              rotation={[0, -a, 0]}
-            >
-              <boxGeometry args={[0.07, 0.014, 0.025]} />
-              <meshStandardMaterial
-                color="#fde68a"
-                metalness={0.7}
-                roughness={0.25}
-                emissive="#f59e0b"
-                emissiveIntensity={0.4}
-              />
-            </mesh>
-          ))}
-          {/* centralni reljef */}
-          <mesh>
-            <cylinderGeometry args={[0.17, 0.17, 0.018, 32]} />
-            <meshStandardMaterial
-              color="#fde68a"
-              metalness={0.75}
-              roughness={0.2}
-              emissive="#f59e0b"
-              emissiveIntensity={0.5}
-            />
-          </mesh>
-        </group>
-      ))}
+      {/* polirani rub */}
+      <mesh rotation={[Math.PI / 2, 0, 0]}>
+        <torusGeometry args={[0.55, 0.03, 16, 48]} />
+        <meshStandardMaterial
+          color="#fde68a"
+          metalness={0.95}
+          roughness={0.1}
+          emissive="#b45309"
+          emissiveIntensity={0.25}
+        />
+      </mesh>
     </group>
   );
 }
@@ -158,12 +122,9 @@ function Ring({ position = [0, 0, 0] }) {
   );
 }
 
-// Kompletna scena s parallax pracenjem misa
+// Kompletna scena — elementi lebde sami od sebe (Float), bez pracenja misa
 function SceneContent() {
   const group = useRef();
-  useMouseParallax(group, {
-    rotY: 0.35, rotX: 0.2, posX: 0.45, posY: 0.3,
-  });
 
   return (
     <>
