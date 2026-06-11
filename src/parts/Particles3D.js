@@ -1,20 +1,13 @@
 /* eslint-disable react/no-unknown-property */
 import React, { Suspense, useRef } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas } from '@react-three/fiber';
 import { Sparkles } from '@react-three/drei';
+import useMouseParallax from './useMouseParallax';
 
 // Interaktivne tackice u pozadini — prate mis kao na pocetnoj
 function ParticlesContent() {
   const group = useRef();
-
-  useFrame((state) => {
-    if (group.current) {
-      const targetY = state.pointer.x * 0.3;
-      const targetX = -state.pointer.y * 0.2;
-      group.current.rotation.y += (targetY - group.current.rotation.y) * 0.05;
-      group.current.rotation.x += (targetX - group.current.rotation.x) * 0.05;
-    }
-  });
+  useMouseParallax(group, { rotY: 0.3, rotX: 0.2 });
 
   return (
     <group ref={group}>

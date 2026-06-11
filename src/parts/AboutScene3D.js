@@ -3,6 +3,7 @@ import React, { Suspense, useRef, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Float, Sparkles } from '@react-three/drei';
 import { Coin } from './Scene3D';
+import useMouseParallax from './useMouseParallax';
 
 const METAL = { color: '#16244c', metalness: 0.7, roughness: 0.3 };
 const GOLD = { color: '#fbbf24', metalness: 0.8, roughness: 0.25, emissive: '#b45309', emissiveIntensity: 0.3 };
@@ -109,14 +110,8 @@ function BalanceScale() {
 
 function SceneContent() {
   const group = useRef();
-
-  useFrame((state) => {
-    if (group.current) {
-      const targetY = state.pointer.x * 0.45;
-      const targetX = -state.pointer.y * 0.25;
-      group.current.rotation.y += (targetY - group.current.rotation.y) * 0.06;
-      group.current.rotation.x += (targetX - group.current.rotation.x) * 0.06;
-    }
+  useMouseParallax(group, {
+    rotY: 0.45, rotX: 0.25, posX: 0.3, posY: 0.2,
   });
 
   return (

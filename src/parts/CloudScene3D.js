@@ -2,6 +2,7 @@
 import React, { Suspense, useRef, useState, useMemo } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Float, Sparkles } from '@react-three/drei';
+import useMouseParallax from './useMouseParallax';
 
 // 3D oblak od sfera — pulsira na hover
 function Cloud({ position = [0, 0, 0] }) {
@@ -124,14 +125,8 @@ function UploadArrow() {
 
 function SceneContent() {
   const group = useRef();
-
-  useFrame((state) => {
-    if (group.current) {
-      const targetY = state.pointer.x * 0.4;
-      const targetX = -state.pointer.y * 0.2;
-      group.current.rotation.y += (targetY - group.current.rotation.y) * 0.06;
-      group.current.rotation.x += (targetX - group.current.rotation.x) * 0.06;
-    }
+  useMouseParallax(group, {
+    rotY: 0.4, rotX: 0.22, posX: 0.3, posY: 0.2,
   });
 
   return (
