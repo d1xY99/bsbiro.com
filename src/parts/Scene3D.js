@@ -17,7 +17,7 @@ export function Coin({ position = [0, 0, 0], rotation = [0, 0, 0], scale = 1 }) 
           emissiveIntensity={0.35}
         />
       </mesh>
-      <mesh>
+      <mesh rotation={[Math.PI / 2, 0, 0]}>
         <torusGeometry args={[0.55, 0.045, 16, 48]} />
         <meshStandardMaterial
           color="#f59e0b"
