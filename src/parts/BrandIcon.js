@@ -10,10 +10,10 @@ export default function BrandIcon() {
         <img
           src={logo}
           alt="BS Biro logo"
-          className="relative h-12 w-12 object-contain"
+          className="relative h-16 w-16 object-contain"
         />
       </div>
-      <p className="font-display text-2xl font-bold text-white tracking-tight">
+      <p className="font-display text-3xl font-bold text-white tracking-tight">
         BS
         <span className="text-gradient"> Biro</span>
       </p>
