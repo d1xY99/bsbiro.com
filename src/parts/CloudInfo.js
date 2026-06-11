@@ -3,13 +3,15 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import CloudScene3D from './CloudScene3D';
+import Particles3D from './Particles3D';
 
 export default function CloudInfo() {
   const { t } = useTranslation();
 
   return (
-    <section className="container mx-auto px-6 lg:px-12 pt-32 min-h-screen">
-      <div className="flex flex-col lg:flex-row gap-12 items-center">
+    <section className="relative pt-32 min-h-screen">
+      <Particles3D className="absolute inset-0 pointer-events-none" />
+      <div className="container mx-auto px-6 lg:px-12 relative flex flex-col lg:flex-row gap-12 items-center">
         <div className="w-full lg:w-1/2">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -47,9 +49,7 @@ export default function CloudInfo() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="w-full lg:w-1/2"
         >
-          <div className="glass-card overflow-hidden">
-            <CloudScene3D className="w-full h-[420px] xl:h-[500px]" />
-          </div>
+          <CloudScene3D className="w-full h-[420px] xl:h-[500px]" />
         </motion.div>
       </div>
     </section>

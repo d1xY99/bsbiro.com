@@ -2,13 +2,15 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import AboutScene3D from './AboutScene3D';
+import Particles3D from './Particles3D';
 
 export default function Informacije() {
   const { t } = useTranslation();
 
   return (
-    <section className="container mx-auto px-6 lg:px-12 pt-32 min-h-screen">
-      <div className="flex flex-col lg:flex-row gap-12 items-start">
+    <section className="relative pt-32 min-h-screen">
+      <Particles3D className="absolute inset-0 pointer-events-none" />
+      <div className="container mx-auto px-6 lg:px-12 relative flex flex-col lg:flex-row gap-12 items-start">
         <div className="w-full lg:w-3/5">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -34,9 +36,7 @@ export default function Informacije() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="w-full lg:w-2/5 lg:sticky lg:top-32"
         >
-          <div className="glass-card overflow-hidden">
-            <AboutScene3D className="w-full h-[420px] xl:h-[500px]" />
-          </div>
+          <AboutScene3D className="w-full h-[420px] xl:h-[500px]" />
         </motion.div>
       </div>
     </section>
