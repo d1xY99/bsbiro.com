@@ -6,6 +6,7 @@
     "contact": "Contatto"
   },
   "advantage": {
+    "badge": "Vantaggi",
     "title": "Perché scegliere noi",
     "subtitle": "Scopri perché siamo la scelta giusta per le tue esigenze contabili.",
     "items": {
@@ -42,28 +43,27 @@
     "desc": "Contattaci e insieme troveremo la soluzione migliore per la tua azienda!"
   },
   "discussForm": {
-      "title": "Invia una richiesta",
-      "desc": "Compila il modulo qui sotto per inviarci la tua richiesta o descrivere il tuo bisogno. Ti risponderemo entro 24 ore.",
-      "placeholder": {
-        "name": "Il tuo nome",
-        "company": "Nome dell'azienda",
-        "email": "Il tuo indirizzo email",
-        "phone": "Numero di contatto",
-        "projectIdea": "Descrivi la tua richiesta o idea"
-      },
-      "send": "Invia",
-      "success": "Messaggio inviato con successo! Ti contatteremo presto. Grazie!",
-      "error": "Si è verificato un errore durante l'invio. Riprova.",
-      "required": "Compila tutti i campi.",
-        "contactTitle": "Dati di contatto",
-        "company": "Azienda",
-        "address": "Indirizzo",
-        "phone": "Telefono",
-        "email": "E-mail",
-        "workHours": "Orario di lavoro",
-        "workHoursValue": "Lun-Ven: 8:00 - 16:00"
-
+    "title": "Invia una richiesta",
+    "desc": "Compila il modulo qui sotto per inviarci la tua richiesta o descrivere il tuo bisogno. Ti risponderemo entro 24 ore.",
+    "placeholder": {
+      "name": "Il tuo nome",
+      "company": "Nome dell'azienda",
+      "email": "Il tuo indirizzo email",
+      "phone": "Numero di contatto",
+      "projectIdea": "Descrivi la tua richiesta o idea"
     },
+    "send": "Invia",
+    "success": "Messaggio inviato con successo! Ti contatteremo presto. Grazie!",
+    "error": "Si è verificato un errore durante l'invio. Riprova.",
+    "required": "Compila tutti i campi.",
+    "contactTitle": "Dati di contatto",
+    "company": "Azienda",
+    "address": "Indirizzo",
+    "phone": "Telefono",
+    "email": "E-mail",
+    "workHours": "Orario di lavoro",
+    "workHoursValue": "Lun-Ven: 8:00 - 16:00"
+  },
   "footer": {
     "slogan": "Affidabilità, precisione e supporto moderno per la tua azienda",
     "contactTitle": "Contatto",
@@ -77,20 +77,33 @@
   },
   "hero": {
     "title": "Soluzioni innovative <br />per la tua contabilità",
+    "titleLine1": "Soluzioni innovative",
+    "titleLine2": "per la tua contabilità",
+    "badge": "Servizio di Contabilità - Zenica",
     "desc": "Siamo specializzati in servizi contabili e digitalizzazione aziendale.<br />La nostra competenza in contabilità è ulteriormente rafforzata da soluzioni software innovative, rendendo i tuoi processi finanziari più semplici e automatizzati.",
-    "cta": "Contattaci!"
+    "cta": "Contattaci!",
+    "cta2": "I nostri servizi",
+    "scroll": "Scorri",
+    "stats": {
+      "cloud": "Accesso cloud ai documenti",
+      "response": "Risposta alla tua richiesta",
+      "transparent": "Attività trasparente"
+    }
   },
   "about": {
     "title": "Chi siamo",
     "desc": "BS Biro è un'agenzia di contabilità moderna di Zenica dedicata a fornire supporto affidabile e professionale a tutti i nostri clienti. Il nostro team unisce competenze in contabilità e ingegneria del software per offrirti operazioni aziendali precise, efficienti e digitalizzate.<br /><br />Il nostro obiettivo è semplificare le tue attività quotidiane, automatizzare i processi e garantire la trasparenza e la sicurezza delle tue finanze. Offriamo soluzioni personalizzate e flessibili per ogni cliente.<br /><br />Adattiamo il nostro lavoro a ciascun cliente, fornendo soluzioni flessibili e individuali per la tua azienda. Il nostro obiettivo è offrire consigli chiari e servizi mensili di qualità in modo semplice e comprensibile, sempre con un rapporto onesto e trasparente sui prezzi. Costruiamo la nostra esperienza attraverso la formazione continua e seguendo le ultime tendenze in contabilità e tecnologia.<br /><br />Siamo consapevoli della sensibilità dei dati con cui lavoriamo, quindi prestiamo particolare attenzione alla sicurezza e alla riservatezza di tutti i tuoi documenti. La fiducia e la lealtà dei clienti sono il valore più grande della nostra attività.<br /><br />Grazie a un'atmosfera positiva e alla dedizione del team, rispondiamo facilmente alle tue richieste e ci impegniamo a migliorare il nostro servizio ogni giorno."
   },
   "services": {
+    "badge": "Servizi",
     "title": "I nostri servizi",
     "desc": "Ti aiutiamo a migliorare il tuo business attraverso servizi contabili e software su misura per le tue esigenze."
   },
   "testimonials": {
+    "badge": "Recensioni",
     "title": "Esperienze dei nostri clienti",
-    "desc": "Scopri cosa dicono i nostri clienti della collaborazione con noi."
+    "desc": "Scopri cosa dicono i nostri clienti della collaborazione con noi.",
+    "clientLabel": "Cliente"
   },
   "cloudLogin": {
     "back": "Torna alla home",
@@ -99,15 +112,18 @@
     "password": "Password",
     "login": "Accedi"
   },
-   "servicesItems": {
+  "servicesItems": {
     "knjigovodstvo": {
-      "title": "Contabilità"
+      "title": "Contabilità",
+      "description": "Gestione completa dei libri contabili, elaborazione delle buste paga, dichiarazioni IVA e bilanci annuali — con precisione e puntualità."
     },
     "softver": {
-      "title": "Ingegneria del Software"
+      "title": "Ingegneria del Software",
+      "description": "Sviluppiamo soluzioni software che automatizzano e digitalizzano i tuoi processi aziendali."
     },
     "savjetovanje": {
-      "title": "Consulenza Aziendale"
+      "title": "Consulenza Aziendale",
+      "description": "Consigli esperti per ottimizzare le attività, le imposte e i flussi finanziari della tua azienda."
     }
   },
   "advantagesItems": {
@@ -131,15 +147,18 @@
   "testimonialsItems": {
     "amra": {
       "name": "Amra Hadžić",
-      "testimoni": "Grazie al team di BS Biro, siete davvero professionali e cordiali! Consigliatissimi."
+      "testimoni": "Collaboro con BS Biro ormai da tre anni. Le buste paga e le dichiarazioni IVA sono sempre pronte prima della scadenza, e a ogni domanda ricevo risposta in giornata.",
+      "role": "Titolare di un negozio al dettaglio"
     },
     "tarik": {
       "name": "Tarik Šabanović",
-      "testimoni": "Collaborare con BS Biro è sempre efficiente e senza stress. Tutto è trasparente e ordinato."
+      "testimoni": "Quando abbiamo aperto l'azienda ci hanno guidato in tutta la registrazione e impostato la contabilità da zero. Oggi scambiamo tutti i documenti tramite il cloud — senza scartoffie.",
+      "role": "Direttore di una S.r.l."
     },
     "lejla": {
       "name": "Lejla Karić",
-      "testimoni": "BS Biro ha semplificato notevolmente la nostra attività. Un caloroso consiglio a tutti gli imprenditori!"
+      "testimoni": "Sono passata a loro dopo brutte esperienze con il mio contabile precedente. La differenza è enorme — tutto è trasparente e il prezzo concordato in anticipo, senza sorprese.",
+      "role": "Imprenditrice autonoma"
     }
   }
 }

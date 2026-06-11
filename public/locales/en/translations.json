@@ -6,6 +6,7 @@
     "contact": "Contact"
   },
   "advantage": {
+    "badge": "Advantages",
     "title": "Why Choose Us",
     "subtitle": "Find out why we are the right choice for your accounting needs.",
     "items": {
@@ -42,28 +43,27 @@
     "desc": "Reach out to us and together we'll find the best solution for your business!"
   },
   "discussForm": {
-      "title": "Send an Inquiry",
-      "desc": "Please fill out the form below to send us your inquiry or describe your request. We will respond within 24 hours.",
-      "placeholder": {
-        "name": "Your name",
-        "company": "Company name",
-        "email": "Your email address",
-        "phone": "Contact number",
-        "projectIdea": "Describe your inquiry or idea"
-      },
-      "send": "Send",
-      "success": "Message successfully sent! We will get back to you soon. Thank you!",
-      "error": "An error occurred while sending. Please try again.",
-      "required": "Please fill out all fields.",
-      "contactTitle": "Contact Information",
-      "company": "Company",
-      "address": "Address",
-      "phone": "Phone",
-      "email": "E-mail",
-      "workHours": "Working hours",
-        "workHoursValue": "Mon-Fri: 8:00 AM - 4:00 PM"
-
+    "title": "Send an Inquiry",
+    "desc": "Please fill out the form below to send us your inquiry or describe your request. We will respond within 24 hours.",
+    "placeholder": {
+      "name": "Your name",
+      "company": "Company name",
+      "email": "Your email address",
+      "phone": "Contact number",
+      "projectIdea": "Describe your inquiry or idea"
     },
+    "send": "Send",
+    "success": "Message successfully sent! We will get back to you soon. Thank you!",
+    "error": "An error occurred while sending. Please try again.",
+    "required": "Please fill out all fields.",
+    "contactTitle": "Contact Information",
+    "company": "Company",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "E-mail",
+    "workHours": "Working hours",
+    "workHoursValue": "Mon-Fri: 8:00 AM - 4:00 PM"
+  },
   "footer": {
     "slogan": "Reliability, precision and modern support for your business",
     "contactTitle": "Contact",
@@ -77,20 +77,33 @@
   },
   "hero": {
     "title": "Innovative solutions <br />for your accounting",
+    "titleLine1": "Innovative solutions",
+    "titleLine2": "for your accounting",
+    "badge": "Accounting Service - Zenica",
     "desc": "We specialize in accounting services and business digitalization.<br />Our expertise in accounting is further enhanced by innovative software solutions, making your financial processes easier and more automated.",
-    "cta": "Contact us!"
+    "cta": "Contact us!",
+    "cta2": "Our services",
+    "scroll": "Scroll",
+    "stats": {
+      "cloud": "Cloud document access",
+      "response": "Response to your inquiry",
+      "transparent": "Transparent business"
+    }
   },
   "about": {
     "title": "About Us",
     "desc": "BS Biro is a modern accounting agency from Zenica dedicated to providing reliable and professional support to all our clients. Our team combines knowledge from accounting and software engineering to enable you to have precise, efficient and digitalized business operations.<br /><br />Our goal is to make your daily tasks easier, automate processes and ensure transparency and security of your finances. We approach each client individually, offering solutions tailored to your business needs.<br /><br />We adapt our work to each client, offering flexible and individual solutions for your business. Our aim is to provide clear advice and quality monthly services in a simple and understandable way, always with fair and transparent pricing. We build our expertise through continuous education and by following the latest trends in accounting and technology.<br /><br />We are aware of the sensitivity of the data we work with, so we pay special attention to the security and confidentiality of all your documents. The trust and loyalty of our clients is considered the greatest value of our business.<br /><br />Thanks to a positive atmosphere and dedication within our team, we easily respond to your requests and strive to improve our service every day."
   },
   "services": {
+    "badge": "Services",
     "title": "Our Services",
     "desc": "We help you improve your business through accounting and software services tailored to your needs."
   },
   "testimonials": {
+    "badge": "Reviews",
     "title": "Client Experiences",
-    "desc": "See what clients say about working with us."
+    "desc": "See what clients say about working with us.",
+    "clientLabel": "Client"
   },
   "cloudLogin": {
     "back": "Back to home",
@@ -99,15 +112,18 @@
     "password": "Password",
     "login": "Login"
   },
-   "servicesItems": {
+  "servicesItems": {
     "knjigovodstvo": {
-      "title": "Accounting"
+      "title": "Accounting",
+      "description": "Complete bookkeeping, payroll processing, VAT returns and annual financial statements — accurate and on time."
     },
     "softver": {
-      "title": "Software Engineering"
+      "title": "Software Engineering",
+      "description": "We develop software solutions that automate and digitalize your business processes."
     },
     "savjetovanje": {
-      "title": "Business Consulting"
+      "title": "Business Consulting",
+      "description": "Expert advice for optimizing your company's operations, taxes and financial flows."
     }
   },
   "advantagesItems": {
@@ -131,15 +147,18 @@
   "testimonialsItems": {
     "amra": {
       "name": "Amra Hadžić",
-      "testimoni": "Thank you to the BS Biro team, you are truly professional and kind! Highly recommended."
+      "testimoni": "I've been working with BS Biro for three years now. Payroll and VAT returns are always ready ahead of the deadline, and I get an answer to every question the same day.",
+      "role": "Owner of a retail shop"
     },
     "tarik": {
       "name": "Tarik Šabanović",
-      "testimoni": "Working with BS Biro is always efficient and stress-free. Everything is transparent and organized."
+      "testimoni": "When we started our company, they guided us through the entire registration and set up the bookkeeping from scratch. Today we exchange all documents through the cloud — no paperwork.",
+      "role": "Managing director (LLC)"
     },
     "lejla": {
       "name": "Lejla Karić",
-      "testimoni": "BS Biro has greatly simplified our business. Warm recommendation for all entrepreneurs!"
+      "testimoni": "I switched to them after bad experiences with my previous accountant. The difference is huge — everything is transparent and the price agreed upfront, with no surprises.",
+      "role": "Independent entrepreneur"
     }
   }
 }

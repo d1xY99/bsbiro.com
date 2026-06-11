@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { Fade } from 'react-awesome-reveal';
+import { motion } from 'framer-motion';
 import * as emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { useTranslation } from 'react-i18next';
-import { Form } from 'elements/Form';
-import Button from 'elements/Button';
 
 const FIRMA_INFO = {
   mail: 'bsbiro@hotmail.com',
@@ -15,34 +13,71 @@ const FIRMA_INFO = {
   city: 'Zenica, Bosna i Hercegovina',
 };
 
+function InfoRow({ icon, label, value }) {
+  return (
+    <div className="flex items-start gap-4">
+      <div className="flex items-center justify-center w-11 h-11 rounded-xl bg-accent-cyan/10 border border-accent-cyan/30 text-accent-cyan shrink-0">
+        {icon}
+      </div>
+      <div>
+        <span className="block text-white font-semibold">{label}</span>
+        <span className="block text-slate-400 font-light">{value}</span>
+      </div>
+    </div>
+  );
+}
+
 function FirmaInfoBox() {
   const { t } = useTranslation();
   return (
-    <Fade direction="left" triggerOnce>
-      <div className="bg-white rounded-2xl shadow-lg p-8 mb-10 md:mb-0 md:mr-8 w-full max-w-md">
-        <h2 className="text-3xl font-bold text-theme-blue mb-6">{t('discussForm.contactTitle') || 'Kontakt podaci'}</h2>
-        <div className="mb-4">
-          <span className="block text-lg text-gray-700 font-semibold">Dipl. Ing. Senad Bašić, BS Biro Zenica</span>
-          <span className="block text-gray-500"></span>
-        </div>
-        <div className="mb-4">
-          <span className="block text-lg text-gray-700 font-semibold">{t('discussForm.address')}</span>
-          <span className="block text-gray-500">{FIRMA_INFO.address}, {FIRMA_INFO.city}</span>
-        </div>
-        <div className="mb-4">
-          <span className="block text-lg text-gray-700 font-semibold">{t('discussForm.phone')}</span>
-          <span className="block text-gray-500">{FIRMA_INFO.phone}</span>
-        </div>
-        <div className="mb-4">
-          <span className="block text-lg text-gray-700 font-semibold">{t('discussForm.email')}</span>
-          <span className="block text-gray-500">{FIRMA_INFO.mail}</span>
-        </div>
-        <div>
-          <span className="block text-lg text-gray-700 font-semibold">{t('discussForm.workHours')}</span>
-          <span className="block text-gray-500">{t('discussForm.workHoursValue')}</span>
-        </div>
-      </div>
-    </Fade>
+    <motion.div
+      initial={{ opacity: 0, x: -40 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.7, delay: 0.2 }}
+      className="glass-card p-8 lg:p-10 w-full lg:max-w-md space-y-6 h-fit"
+    >
+      <h2 className="font-display text-2xl font-bold text-white mb-2">{t('discussForm.contactTitle')}</h2>
+      <p className="text-slate-400 font-light -mt-4">Dipl. Ing. Senad Bašić, BS Biro Zenica</p>
+
+      <InfoRow
+        icon={(
+          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 21s7-5.1 7-11a7 7 0 10-14 0c0 5.9 7 11 7 11z" />
+            <circle cx="12" cy="10" r="2.5" />
+          </svg>
+        )}
+        label={t('discussForm.address')}
+        value={`${FIRMA_INFO.address}, ${FIRMA_INFO.city}`}
+      />
+      <InfoRow
+        icon={(
+          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3 5.5C3 4.7 3.7 4 4.5 4h2.6c.7 0 1.3.5 1.5 1.2l.9 3.3c.2.6 0 1.3-.5 1.7l-1.4 1.1a14 14 0 005.1 5.1l1.1-1.4c.4-.5 1.1-.7 1.7-.5l3.3.9c.7.2 1.2.8 1.2 1.5v2.6c0 .8-.7 1.5-1.5 1.5C9.6 21 3 14.4 3 5.5z" />
+          </svg>
+        )}
+        label={t('discussForm.phone')}
+        value={FIRMA_INFO.phone}
+      />
+      <InfoRow
+        icon={(
+          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l9 6 9-6M4.5 19.5h15a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5h-15A1.5 1.5 0 003 6v12a1.5 1.5 0 001.5 1.5z" />
+          </svg>
+        )}
+        label={t('discussForm.email')}
+        value={FIRMA_INFO.mail}
+      />
+      <InfoRow
+        icon={(
+          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}>
+            <circle cx="12" cy="12" r="9" />
+            <path strokeLinecap="round" strokeLinejoin="round" d="M12 7v5l3 2" />
+          </svg>
+        )}
+        label={t('discussForm.workHours')}
+        value={t('discussForm.workHoursValue')}
+      />
+    </motion.div>
   );
 }
 
@@ -51,13 +86,16 @@ export const DiscussForm = (actions) => {
   const { data, resetForm } = actions;
   const [loading, setLoading] = useState(false);
 
-  const submitEmail = () => {
-    const { name, company, email, phone, projectIdea } = data;
+  const submitEmail = (e) => {
+    e.preventDefault();
+    const {
+      name, company, email, phone, projectIdea,
+    } = data;
     const templateParams = {
       from_name: name,
-      company: company,
-      email: email,
-      phone: phone,
+      company,
+      email,
+      phone,
       message: projectIdea,
     };
 
@@ -79,7 +117,7 @@ export const DiscussForm = (actions) => {
         .then(() => {
           toast.success(t('discussForm.success'));
           resetForm();
-        }, (error) => {
+        }, () => {
           toast.error(t('discussForm.error'));
         })
         .finally(() => {
@@ -91,106 +129,97 @@ export const DiscussForm = (actions) => {
   };
 
   return (
-    <section className="flex flex-col items-center container mx-auto mt-10">
-      <Fade direction="down" triggerOnce>
-        <h1 className="text-5xl text-theme-blue text-center font-bold">{t('discussForm.title')}</h1>
-      </Fade>
-
-      <Fade direction="up" triggerOnce>
-        <p className="font-light text-lg text-gray-400 text-center mb-12">
+    <section className="container mx-auto px-6 lg:px-12 pt-32 min-h-screen">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        className="text-center max-w-2xl mx-auto mb-14"
+      >
+        <span className="section-badge">{t('menu.contact')}</span>
+        <h1 className="font-display text-5xl sm:text-6xl font-bold text-white mt-5 mb-4">
+          <span className="text-gradient">{t('discussForm.title')}</span>
+        </h1>
+        <p className="font-light text-lg text-slate-400">
           {t('discussForm.desc')}
         </p>
-      </Fade>
+      </motion.div>
 
-      {/* Dvostrani layout */}
-      <div className="flex flex-col md:flex-row w-full justify-center items-stretch gap-8">
-        {/* Lijeva strana: Info o firmi */}
+      <div className="flex flex-col lg:flex-row justify-center gap-8">
         <FirmaInfoBox />
 
-        {/* Desna strana: Kontakt forma */}
-       <Fade direction="up" triggerOnce>
-        <div className="flex flex-col">
-          <div className="flex flex-col sm:flex-row mx-auto">
-            <Form
+        <motion.form
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="glass-card p-8 lg:p-10 w-full lg:max-w-xl space-y-4"
+          onSubmit={submitEmail}
+        >
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input
               id="name"
               name="name"
               type="text"
               value={data.name}
               placeholder={t('discussForm.placeholder.name')}
-              className=""
+              className="input-dark"
               onChange={actions.onChange}
             />
-            <Form
+            <input
               id="company"
               name="company"
               type="text"
               value={data.company}
               placeholder={t('discussForm.placeholder.company')}
-              className=""
+              className="input-dark"
               onChange={actions.onChange}
             />
           </div>
-
-          <div className="flex flex-col sm:flex-row mx-auto">
-            <Form
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input
               id="email"
               name="email"
               type="email"
               value={data.email}
               placeholder={t('discussForm.placeholder.email')}
-              className=""
+              className="input-dark"
               onChange={actions.onChange}
             />
-            <Form
+            <input
               id="phone"
               name="phone"
-              type="number"
+              type="tel"
               value={data.phone}
               placeholder={t('discussForm.placeholder.phone')}
-              className=""
+              className="input-dark"
               onChange={actions.onChange}
             />
           </div>
-
-          <div className="mx-auto">
-            <Form
-              id="projectIdea"
-              name="projectIdea"
-              type="textarea"
-              value={data.projectIdea}
-              placeholder={t('discussForm.placeholder.projectIdea')}
-              className=""
-              onChange={actions.onChange}
-            />
-          </div>
-          <Button
-            className="text-xl mx-auto px-12 py-3 mt-5 bg-theme-light-blue text-white rounded-full border-2 border-theme-light-blue hover:bg-dark-theme-light-blue border-purple-800 transition duration-200 focus:outline-none flex items-center gap-2"
-            type="button"
-            onClick={submitEmail}
-            disabled={loading} 
+          <textarea
+            id="projectIdea"
+            name="projectIdea"
+            rows={6}
+            value={data.projectIdea}
+            placeholder={t('discussForm.placeholder.projectIdea')}
+            className="input-dark resize-none"
+            onChange={actions.onChange}
+          />
+          <button
+            type="submit"
+            className="btn-primary w-full text-lg disabled:opacity-60"
+            disabled={loading}
           >
             {loading ? (
-              <svg className="animate-spin h-5 w-5 text-white" viewBox="0 0 24 24">
-                <circle
-                  className="opacity-25"
-                  cx="12" cy="12" r="10"
-                  stroke="currentColor"
-                  strokeWidth="4"
-                  fill="none"
-                />
-                <path
-                  className="opacity-75"
-                  fill="currentColor"
-                  d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
-                />
+              <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" />
               </svg>
             ) : null}
             {t('discussForm.send')}
-          </Button>
-        </div>
-      </Fade>
+          </button>
+        </motion.form>
       </div>
-      <ToastContainer />
+      <ToastContainer theme="dark" />
     </section>
   );
 };

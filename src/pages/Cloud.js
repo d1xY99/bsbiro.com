@@ -6,6 +6,8 @@ import React, { Component } from 'react';
 
 import Header from 'parts/Header';
 import CloudInfo from 'parts/CloudInfo';
+import Particles3D from 'parts/Particles3D';
+import Footer from 'parts/Footer';
 
 
 export default class ProjectPage extends Component {
@@ -17,7 +19,13 @@ export default class ProjectPage extends Component {
     return (
       <>
         <Header />
-        <CloudInfo />
+        <div className="relative overflow-hidden">
+          <Particles3D className="fixed inset-0 z-0 pointer-events-none" />
+          <div className="relative z-10">
+            <CloudInfo />
+            <Footer />
+          </div>
+        </div>
       </>
     );
   }

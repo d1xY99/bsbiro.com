@@ -8,6 +8,7 @@ import {
 } from 'json/landingPageData';
 import Header from 'parts/Header';
 import Hero from 'parts/Hero';
+import Particles3D from 'parts/Particles3D';
 import Service from 'parts/Service';
 import Advantage from 'parts/Advantage';
 import Testimonial from 'parts/Testimonial';
@@ -23,12 +24,17 @@ export default class LandingPage extends Component {
     return (
       <>
         <Header />
-        <Hero />
-        <Service data={Services} />
-        <Advantage data={Advantages} />
-        <Testimonial data={Recenzije} />
-        <Discuss />
-        <Footer />
+        <div className="relative overflow-hidden">
+          <Particles3D className="fixed inset-0 z-0 pointer-events-none" />
+          <div className="relative z-10">
+            <Hero />
+            <Service data={Services} />
+            <Advantage data={Advantages} />
+            <Testimonial data={Recenzije} />
+            <Discuss />
+            <Footer />
+          </div>
+        </div>
       </>
     );
   }

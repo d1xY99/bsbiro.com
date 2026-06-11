@@ -6,6 +6,7 @@
     "contact": "Kontakt"
   },
   "advantage": {
+    "badge": "Prednosti",
     "title": "Zašto odabrati nas",
     "subtitle": "Saznajte zašto smo pravi izbor za vaše knjigovodstvene potrebe.",
     "items": {
@@ -77,20 +78,33 @@
   },
   "hero": {
     "title": "Inovativna rješenja <br />za vaše knjigovodstvo",
+    "titleLine1": "Inovativna rješenja",
+    "titleLine2": "za vaše knjigovodstvo",
+    "badge": "Knjigovodstveni Servis - Zenica",
     "desc": "Specijalizirani smo za knjigovodstvene usluge i digitalizaciju poslovanja.<br />Naša stručnost u knjigovodstvu dodatno je unaprijeđena inovativnim softverskim rješenjima, čime olakšavamo i automatiziramo vaše financijske procese.",
-    "cta": "Kontaktirajte nas!"
+    "cta": "Kontaktirajte nas",
+    "cta2": "Naše usluge",
+    "scroll": "Skrolaj",
+    "stats": {
+      "cloud": "Cloud pristup dokumentima",
+      "response": "Odgovor na vaš upit",
+      "transparent": "Transparentno poslovanje"
+    }
   },
   "about": {
     "title": "O nama",
     "desc": "BS Biro je moderna knjigovodstvena agencija iz Zenice posvećena pružanju pouzdane i profesionalne podrške svim svojim klijentima. Naš tim objedinjuje znanje iz knjigovodstva i softverskog inženjeringa kako bismo vam omogućili precizno, efikasno i digitalizirano poslovanje.<br /><br />Naš cilj je olakšati vaše svakodnevne obaveze, automatizirati procese i osigurati transparentnost i sigurnost vaših financija. Svakom klijentu pristupamo individualno, nudeći rješenja prilagođena potrebama vašeg poslovanja.<br /><br />Naš rad prilagođavamo svakom klijentu, nudeći fleksibilna i individualna rješenja za vaše poslovanje. Cilj nam je pružiti jasne savjete i kvalitetne mjesečne usluge na jednostavan i razumljiv način, uvijek uz pošten i transparentan odnos prema cijenama. Svoju stručnost gradimo kroz stalno usavršavanje i praćenje najnovijih trendova u knjigovodstvu i tehnologiji.<br /><br />Svjesni smo osjetljivosti podataka s kojima radimo, zato posebno pazimo na sigurnost i povjerljivost svih vaših dokumenata. Povjerenje i lojalnost klijenata smatramo najvećom vrijednošću našeg poslovanja.<br /><br />Zahvaljujući pozitivnoj atmosferi i predanosti unutar tima, s lakoćom odgovaramo na vaše zahtjeve i nastojimo svakodnevno unaprijediti našu uslugu."
   },
    "services": {
+    "badge": "Usluge",
     "title": "Naše usluge",
     "desc": "Pomažemo vam unaprijediti poslovanje kroz knjigovodstvene i softverske usluge prilagođene vašim potrebama."
   },
   "testimonials": {
+    "badge": "Recenzije",
     "title": "Iskustva naših klijenata",
-    "desc": "Pogledajte što klijenti kažu o suradnji s nama."
+    "desc": "Pogledajte što klijenti kažu o suradnji s nama.",
+    "clientLabel": "Klijent"
   },
   "cloudLogin": {
     "back": "Povratak na početnu",
@@ -101,13 +115,16 @@
   },
   "servicesItems": {
     "knjigovodstvo": {
-      "title": "Knjigovodstvo"
+      "title": "Knjigovodstvo",
+      "description": "Kompletno vođenje poslovnih knjiga, obračun plata, PDV prijave i završni računi — precizno i na vrijeme."
     },
     "softver": {
-      "title": "Softverski inžinjering"
+      "title": "Softverski inžinjering",
+      "description": "Razvijamo softverska rješenja koja automatiziraju i digitaliziraju vaše poslovne procese."
     },
     "savjetovanje": {
-      "title": "Poslovno savjetovanje"
+      "title": "Poslovno savjetovanje",
+      "description": "Stručni savjeti za optimizaciju poslovanja, poreza i finansijskih tokova vaše firme."
     }
   },
   "advantagesItems": {
@@ -131,15 +148,18 @@
   "testimonialsItems": {
     "amra": {
       "name": "Amra Hadžić",
-      "testimoni": "Hvala ekipi iz BS Biro, zaista ste profesionalni i ljubazni! Sve preporuke."
+      "role": "Vlasnica trgovinske radnje",
+      "testimoni": "Sa BS Biro sarađujem već treću godinu. Obračun plata i PDV prijave uvijek su gotovi prije roka, a na svako pitanje dobijem odgovor isti dan."
     },
     "tarik": {
       "name": "Tarik Šabanović",
-      "testimoni": "Suradnja s BS Biro je uvijek efikasna i bez stresa. Sve je transparentno i uredno."
+      "role": "",
+      "testimoni": "Kad smo otvarali firmu, proveli su nas kroz cijelu registraciju i postavili knjigovodstvo od nule. Danas sve dokumente razmjenjujemo preko clouda — bez papirologije."
     },
     "lejla": {
       "name": "Lejla Karić",
-      "testimoni": "BS Biro nam je značajno olakšao poslovanje. Topla preporuka za sve poduzetnike!"
+      "role": "Samostalna poduzetnica",
+      "testimoni": "Prešla sam kod njih nakon loših iskustava sa prethodnim knjigovođom. Razlika je ogromna — sve je transparentno, a cijena dogovorena unaprijed, bez iznenađenja."
     }
   }
 

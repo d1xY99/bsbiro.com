@@ -41,6 +41,7 @@ export const DiscussProjectPage = () => {
     <>
       <Header />
       <DiscussForm data={data} onChange={onChange} resetForm={resetForm} />
+      <Footer />
     </>
   );
 };
