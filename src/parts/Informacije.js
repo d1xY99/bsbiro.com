@@ -2,14 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import AboutScene3D from './AboutScene3D';
-import Particles3D from './Particles3D';
 
 export default function Informacije() {
   const { t } = useTranslation();
 
   return (
     <section className="relative pt-32 min-h-screen">
-      <Particles3D className="absolute inset-0 pointer-events-none" />
       <div className="container mx-auto px-6 lg:px-12 relative flex flex-col lg:flex-row gap-12 items-start">
         <div className="w-full lg:w-3/5">
           <motion.div

@@ -1,46 +1,143 @@
 /* eslint-disable react/no-unknown-property */
 import React, { Suspense, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Float, Sparkles, RoundedBox } from '@react-three/drei';
+import { Float, Sparkles, RoundedBox, Text } from '@react-three/drei';
 
-// Zlatna kovanica — čist dvotonski novčić: sjajni vanjski prsten,
-// mat unutrašnje polje i polirani rub
+const COIN_NOTCHES = Array.from({ length: 56 }, (_, i) => ({
+  id: `coin-notch-${i}`,
+  angle: (i / 56) * Math.PI * 2,
+}));
+
+const GOLD_FACE = {
+  color: '#ffd166',
+  metalness: 1,
+  roughness: 0.12,
+  emissive: '#e19816',
+  emissiveIntensity: 0.18,
+};
+
+const GOLD_RIM = {
+  color: '#fff0a6',
+  metalness: 1,
+  roughness: 0.06,
+  emissive: '#ffd166',
+  emissiveIntensity: 0.16,
+};
+
+const GOLD_SHADOW = {
+  color: '#e7a72f',
+  metalness: 0.95,
+  roughness: 0.16,
+  emissive: '#c47a0c',
+  emissiveIntensity: 0.16,
+};
+
+const GOLD_ENGRAVE = {
+  color: '#8a4a08',
+  metalness: 0.9,
+  roughness: 0.28,
+  emissive: '#4a2504',
+  emissiveIntensity: 0.04,
+};
+
+const GOLD_HIGHLIGHT = {
+  color: '#fff8d1',
+  metalness: 1,
+  roughness: 0.05,
+  emissive: '#ffe08a',
+  emissiveIntensity: 0.18,
+};
+
+// Zlatna kovanica — slojevito tijelo sa bevelom, nazubljenim rubom i reljefom
 export function Coin({ position = [0, 0, 0], rotation = [0, 0, 0], scale = 1 }) {
   return (
     <group position={position} rotation={rotation} scale={scale}>
-      {/* tijelo / vanjski prsten */}
+      {/* tanko metalno tijelo */}
       <mesh castShadow>
-        <cylinderGeometry args={[0.55, 0.55, 0.07, 48]} />
-        <meshStandardMaterial
-          color="#fbbf24"
-          metalness={0.9}
-          roughness={0.15}
-          emissive="#d97706"
-          emissiveIntensity={0.25}
-        />
+        <cylinderGeometry args={[0.56, 0.56, 0.11, 96]} />
+        <meshStandardMaterial {...GOLD_SHADOW} />
       </mesh>
-      {/* unutrašnje polje — tamnije, mat */}
-      <mesh>
-        <cylinderGeometry args={[0.4, 0.4, 0.074, 48]} />
-        <meshStandardMaterial
-          color="#d97706"
-          metalness={0.75}
-          roughness={0.35}
-          emissive="#92400e"
-          emissiveIntensity={0.3}
-        />
+
+      {/* sitni zupci na obodu, da rub uhvati svjetlo kao pravi novčić */}
+      <group>
+        {COIN_NOTCHES.map(({ id, angle }) => {
+          const radius = 0.57;
+          return (
+            <mesh
+              key={id}
+              position={[Math.cos(angle) * radius, 0, Math.sin(angle) * radius]}
+              rotation={[0, -angle, 0]}
+            >
+              <boxGeometry args={[0.018, 0.13, 0.052]} />
+              <meshStandardMaterial {...GOLD_RIM} />
+            </mesh>
+          );
+        })}
+      </group>
+
+      {/* prednji i zadnji polirani bevel */}
+      {[-1, 1].map((side) => (
+        <mesh key={`coin-bevel-${side}`} position={[0, side * 0.058, 0]} rotation={[Math.PI / 2, 0, 0]}>
+          <torusGeometry args={[0.525, 0.034, 18, 96]} />
+          <meshStandardMaterial {...GOLD_RIM} />
+        </mesh>
+      ))}
+
+      {/* prednja ploha: podignut obod, udubljeno polje i unutrašnji reljef */}
+      <mesh position={[0, 0.065, 0]}>
+        <cylinderGeometry args={[0.5, 0.5, 0.018, 96]} />
+        <meshStandardMaterial {...GOLD_FACE} />
       </mesh>
-      {/* polirani rub */}
-      <mesh rotation={[Math.PI / 2, 0, 0]}>
-        <torusGeometry args={[0.55, 0.03, 16, 48]} />
+      <mesh position={[0, 0.077, 0]} rotation={[Math.PI / 2, 0, 0]}>
+        <torusGeometry args={[0.465, 0.006, 8, 96]} />
+        <meshStandardMaterial {...GOLD_ENGRAVE} />
+      </mesh>
+      <mesh position={[0, 0.078, 0]} rotation={[Math.PI / 2, 0, 0]}>
+        <torusGeometry args={[0.39, 0.012, 12, 96]} />
+        <meshStandardMaterial {...GOLD_RIM} />
+      </mesh>
+      <mesh position={[0, 0.081, 0]}>
+        <cylinderGeometry args={[0.32, 0.32, 0.012, 96]} />
         <meshStandardMaterial
-          color="#fde68a"
+          color="#ffc34d"
           metalness={0.95}
-          roughness={0.1}
-          emissive="#b45309"
-          emissiveIntensity={0.25}
+          roughness={0.16}
+          emissive="#e19816"
+          emissiveIntensity={0.18}
         />
       </mesh>
+      <mesh position={[0, 0.089, 0]} rotation={[Math.PI / 2, 0, 0]}>
+        <torusGeometry args={[0.315, 0.005, 8, 96]} />
+        <meshStandardMaterial {...GOLD_ENGRAVE} />
+      </mesh>
+
+      <Text
+        position={[0, 0.09, 0.005]}
+        rotation={[-Math.PI / 2, 0, 0]}
+        fontSize={0.21}
+        letterSpacing={0.02}
+        anchorX="center"
+        anchorY="middle"
+      >
+        $
+        <meshStandardMaterial {...GOLD_HIGHLIGHT} />
+      </Text>
+
+      {/* par finih linija oko monograma daje osjećaj kovanja, ne keksa */}
+      {[0.17, 0.24].map((radius) => (
+        <mesh key={`coin-face-line-${radius}`} position={[0, 0.092, 0]} rotation={[Math.PI / 2, 0, 0]}>
+          <torusGeometry args={[radius, 0.004, 8, 80]} />
+          <meshStandardMaterial {...GOLD_HIGHLIGHT} />
+        </mesh>
+      ))}
+
+      {/* tamnije urezane linije daju reljefu sjenu bez zatamnjivanja cijele kovanice */}
+      {[0.205, 0.275].map((radius) => (
+        <mesh key={`coin-shadow-line-${radius}`} position={[0, 0.087, 0]} rotation={[Math.PI / 2, 0, 0]}>
+          <torusGeometry args={[radius, 0.003, 8, 80]} />
+          <meshStandardMaterial {...GOLD_ENGRAVE} />
+        </mesh>
+      ))}
     </group>
   );
 }

@@ -3,14 +3,12 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import CloudScene3D from './CloudScene3D';
-import Particles3D from './Particles3D';
 
 export default function CloudInfo() {
   const { t } = useTranslation();
 
   return (
     <section className="relative pt-32 min-h-screen">
-      <Particles3D className="absolute inset-0 pointer-events-none" />
       <div className="container mx-auto px-6 lg:px-12 relative flex flex-col lg:flex-row gap-12 items-center">
         <div className="w-full lg:w-1/2">
           <motion.div
