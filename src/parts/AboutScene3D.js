@@ -125,10 +125,10 @@ function SceneContent() {
         </Float>
 
         <Float speed={2} rotationIntensity={0.3} floatIntensity={1}>
-          <Coin position={[-2.5, 1.5, -0.8]} rotation={[Math.PI / 2 - 0.2, 0.3, 0]} scale={0.55} />
+          <Coin position={[-2.05, 1.45, -0.8]} rotation={[Math.PI / 2 - 0.2, 0.3, 0]} scale={0.55} />
         </Float>
         <Float speed={1.7} rotationIntensity={0.3} floatIntensity={0.9}>
-          <Coin position={[2.5, 1.8, -1]} rotation={[Math.PI / 2 - 0.35, -0.3, 0.1]} scale={0.45} />
+          <Coin position={[2.1, 1.65, -1]} rotation={[Math.PI / 2 - 0.35, -0.3, 0.1]} scale={0.45} />
         </Float>
 
         <Sparkles count={50} scale={[7, 6, 4]} size={2} speed={0.3} color="#67e8f9" opacity={0.5} />
