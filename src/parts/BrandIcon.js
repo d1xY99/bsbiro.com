@@ -1,26 +1,22 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable  */
-
 import React from 'react';
-import Button from '../elements/Button';
-
-import logo from '../assets/images/logo.png'; 
+import { Link } from 'react-router-dom';
+import logo from '../assets/images/logo.png';
 
 export default function BrandIcon() {
   return (
-    <Button className="" type="link" href="/">
-      <span className="flex items-center gap-4">
+    <Link to="/" className="flex items-center gap-3 group">
+      <div className="relative">
+        <div className="absolute inset-0 rounded-full bg-accent-cyan/30 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         <img
           src={logo}
-          alt="Logo"
-          className="h-[72px] w-[72px] object-contain" 
+          alt="BS Biro logo"
+          className="relative h-12 w-12 object-contain"
         />
-        <p className="text-theme-light-blue text-4xl font-medium">
-          BS
-          <span className="text-theme-light-blue"> Biro</span>
-        </p>
-      </span>
-    </Button>
+      </div>
+      <p className="font-display text-2xl font-bold text-white tracking-tight">
+        BS
+        <span className="text-gradient"> Biro</span>
+      </p>
+    </Link>
   );
 }

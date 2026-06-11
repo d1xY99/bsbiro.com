@@ -36,6 +36,25 @@ module.exports = {
         'theme-light-blue': '#0868a7',
         'dark-theme-purple': '#520dc2',
         'theme-blue': '#152C5B',
+        navy: {
+          950: '#060B1A',
+          900: '#0A1228',
+          800: '#101B3A',
+          700: '#16244C',
+        },
+        accent: {
+          cyan: '#22D3EE',
+          blue: '#3B82F6',
+          gold: '#FBBF24',
+        },
+      },
+      fontFamily: {
+        display: ['"Space Grotesk"', 'Poppins', 'sans-serif'],
+      },
+      boxShadow: {
+        glow: '0 0 40px -8px rgba(34, 211, 238, 0.45)',
+        'glow-sm': '0 0 24px -6px rgba(34, 211, 238, 0.35)',
+        'glow-gold': '0 0 40px -8px rgba(251, 191, 36, 0.4)',
       },
       margin: {
         '-112': '-28rem',
@@ -45,6 +64,10 @@ module.exports = {
       },
       animation: {
         'bounce-x': 'bouncex 1s infinite',
+        'gradient-x': 'gradientx 6s ease infinite',
+        'float-slow': 'floaty 7s ease-in-out infinite',
+        'spin-slow': 'spin 14s linear infinite',
+        'pulse-glow': 'pulseglow 4s ease-in-out infinite',
       },
       keyframes: {
         bouncex: {
@@ -56,6 +79,18 @@ module.exports = {
             transform: 'translateY(0)',
             animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
           },
+        },
+        gradientx: {
+          '0%, 100%': { 'background-position': '0% 50%' },
+          '50%': { 'background-position': '100% 50%' },
+        },
+        floaty: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-18px)' },
+        },
+        pulseglow: {
+          '0%, 100%': { opacity: '0.5' },
+          '50%': { opacity: '1' },
         },
       },
       spacing: {

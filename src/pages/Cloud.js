@@ -6,6 +6,7 @@ import React, { Component } from 'react';
 
 import Header from 'parts/Header';
 import CloudInfo from 'parts/CloudInfo';
+import Footer from 'parts/Footer';
 
 
 export default class ProjectPage extends Component {
@@ -18,6 +19,7 @@ export default class ProjectPage extends Component {
       <>
         <Header />
         <CloudInfo />
+        <Footer />
       </>
     );
   }
