@@ -32,7 +32,7 @@ export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden pt-28 lg:pt-0">
+    <section className="relative min-h-screen flex items-center overflow-hidden pt-28 lg:pt-24">
       {/* Pozadina: grid + 3D scena */}
       <div className="absolute inset-0 grid-pattern" />
       <Scene3D className="absolute inset-0 opacity-30 sm:opacity-60 lg:opacity-100 pointer-events-none lg:pointer-events-auto" />

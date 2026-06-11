@@ -38,7 +38,7 @@ function CoinStack({ position = [0, 0, 0] }) {
       <Coin position={[0, 0, 0]} />
       <Coin position={[0.06, 0.14, 0.02]} rotation={[0, 0.5, 0]} />
       <Coin position={[-0.04, 0.28, -0.02]} rotation={[0, 1.1, 0]} />
-      <Coin position={[0.45, 0.62, 0.1]} rotation={[Math.PI / 2.4, 0.3, 0.4]} scale={0.85} />
+      <Coin position={[0.85, 0.75, 0.1]} rotation={[Math.PI / 2.4, 0.3, 0.4]} scale={0.75} />
     </group>
   );
 }
@@ -83,28 +83,29 @@ function BarChart({ position = [0, 0, 0] }) {
   );
 }
 
-// Lebdeci prsten
+// Lebdeci prsten — fiksno nagnut duboko iza scene, okrece se samo u svojoj ravni
 function Ring({ position = [0, 0, 0] }) {
   const ref = useRef();
   useFrame((state) => {
     if (ref.current) {
-      ref.current.rotation.x = state.clock.elapsedTime * 0.15;
-      ref.current.rotation.y = state.clock.elapsedTime * 0.2;
+      ref.current.rotation.z = state.clock.elapsedTime * 0.12;
     }
   });
   return (
-    <mesh ref={ref} position={position}>
-      <torusGeometry args={[2.6, 0.025, 16, 120]} />
-      <meshStandardMaterial
-        color="#3b82f6"
-        emissive="#3b82f6"
-        emissiveIntensity={0.8}
-        metalness={0.6}
-        roughness={0.2}
-        transparent
-        opacity={0.7}
-      />
-    </mesh>
+    <group position={position} rotation={[0.35, -0.25, 0]}>
+      <mesh ref={ref}>
+        <torusGeometry args={[3.1, 0.025, 16, 120]} />
+        <meshStandardMaterial
+          color="#3b82f6"
+          emissive="#3b82f6"
+          emissiveIntensity={0.8}
+          metalness={0.6}
+          roughness={0.2}
+          transparent
+          opacity={0.6}
+        />
+      </mesh>
+    </group>
   );
 }
 
@@ -130,22 +131,18 @@ function SceneContent() {
       <pointLight position={[0, 4, -4]} intensity={10} color="#a78bfa" />
 
       <group ref={group}>
-        <Float speed={1.6} rotationIntensity={0.4} floatIntensity={0.9}>
+        <Float speed={1.6} rotationIntensity={0.15} floatIntensity={0.7}>
           <group scale={0.85}>
             <BarChart position={[1.3, -1.7, 0]} />
           </group>
         </Float>
 
-        <Float speed={2} rotationIntensity={0.6} floatIntensity={1.1}>
-          <CoinStack position={[3.2, 0.6, -0.6]} />
+        <Float speed={2} rotationIntensity={0.2} floatIntensity={0.7}>
+          <CoinStack position={[2.6, 0.8, -0.9]} />
         </Float>
 
-        <Float speed={1.4} rotationIntensity={0.5} floatIntensity={0.8}>
-          <Coin position={[2.4, 2.3, -1]} rotation={[Math.PI / 3, 0, 0.5]} scale={0.7} />
-        </Float>
-
-        <Float speed={1.8} rotationIntensity={0.5} floatIntensity={1}>
-          <mesh position={[3.6, -1.5, 0.2]}>
+        <Float speed={1.8} rotationIntensity={0.3} floatIntensity={0.8}>
+          <mesh position={[3.7, -1.6, 0.2]}>
             <icosahedronGeometry args={[0.5, 0]} />
             <meshStandardMaterial
               color="#3b82f6"
@@ -158,7 +155,7 @@ function SceneContent() {
           </mesh>
         </Float>
 
-        <Ring position={[2.0, 0.2, -1.8]} />
+        <Ring position={[2.0, 0.3, -2.8]} />
         <Sparkles count={90} scale={[10, 7, 6]} size={2.2} speed={0.35} color="#67e8f9" opacity={0.55} />
       </group>
     </>
