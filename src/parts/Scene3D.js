@@ -3,24 +3,38 @@ import React, { Suspense, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Float, Sparkles, RoundedBox } from '@react-three/drei';
 
-// Zlatna kovanica
+// Zlatna kovanica — tijelo, svjetlije reljefno lice s obje strane i obruč po rubu
 export function Coin({ position = [0, 0, 0], rotation = [0, 0, 0], scale = 1 }) {
   return (
     <group position={position} rotation={rotation} scale={scale}>
       <mesh castShadow>
         <cylinderGeometry args={[0.55, 0.55, 0.12, 48]} />
         <meshStandardMaterial
-          color="#fcd34d"
-          metalness={0.7}
-          roughness={0.25}
-          emissive="#d97706"
-          emissiveIntensity={0.35}
+          color="#f59e0b"
+          metalness={0.75}
+          roughness={0.3}
+          emissive="#b45309"
+          emissiveIntensity={0.3}
         />
       </mesh>
+      {/* reljefno lice gore i dole */}
+      {[0.066, -0.066].map((y) => (
+        <mesh key={y} position={[0, y, 0]}>
+          <cylinderGeometry args={[0.4, 0.4, 0.02, 48]} />
+          <meshStandardMaterial
+            color="#fcd34d"
+            metalness={0.65}
+            roughness={0.25}
+            emissive="#d97706"
+            emissiveIntensity={0.45}
+          />
+        </mesh>
+      ))}
+      {/* obruč po rubu */}
       <mesh rotation={[Math.PI / 2, 0, 0]}>
         <torusGeometry args={[0.55, 0.045, 16, 48]} />
         <meshStandardMaterial
-          color="#f59e0b"
+          color="#fbbf24"
           metalness={0.9}
           roughness={0.2}
           emissive="#92400e"
@@ -31,14 +45,13 @@ export function Coin({ position = [0, 0, 0], rotation = [0, 0, 0], scale = 1 }) 
   );
 }
 
-// Stub kovanica
-function CoinStack({ position = [0, 0, 0] }) {
+// Grupa kovanica okrenutih licem prema gledaocu, na razlicitim dubinama
+function CoinGroup({ position = [0, 0, 0] }) {
   return (
     <group position={position}>
-      <Coin position={[0, 0, 0]} />
-      <Coin position={[0.06, 0.14, 0.02]} rotation={[0, 0.5, 0]} />
-      <Coin position={[-0.04, 0.28, -0.02]} rotation={[0, 1.1, 0]} />
-      <Coin position={[0.85, 0.75, 0.1]} rotation={[Math.PI / 2.4, 0.3, 0.4]} scale={0.75} />
+      <Coin position={[0, 0.7, 0.2]} rotation={[Math.PI / 2 - 0.18, 0.25, 0]} scale={0.85} />
+      <Coin position={[0.75, -0.05, -0.4]} rotation={[Math.PI / 2 - 0.3, -0.35, 0.15]} scale={0.62} />
+      <Coin position={[-0.65, -0.25, -0.7]} rotation={[Math.PI / 2 - 0.1, 0.45, -0.1]} scale={0.48} />
     </group>
   );
 }
@@ -138,7 +151,7 @@ function SceneContent() {
         </Float>
 
         <Float speed={2} rotationIntensity={0.2} floatIntensity={0.7}>
-          <CoinStack position={[2.6, 0.8, -0.9]} />
+          <CoinGroup position={[2.7, 1.0, -0.6]} />
         </Float>
 
         <Float speed={1.8} rotationIntensity={0.3} floatIntensity={0.8}>
