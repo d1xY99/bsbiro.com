@@ -1,10 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 export default function CloudLogin() {
   const { t } = useTranslation();
+  const [loginError, setLoginError] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setLoginError(false);
+    setIsSubmitting(true);
+
+    const fakeRequest = fetch('/api/cloud-login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'login-attempt' }),
+    }).catch(() => null);
+
+    const minimumLoadingTime = new Promise((resolve) => {
+      window.setTimeout(resolve, 900);
+    });
+
+    await Promise.all([fakeRequest, minimumLoadingTime]);
+
+    setIsSubmitting(false);
+    setLoginError(true);
+  };
 
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen px-6 overflow-hidden">
@@ -28,19 +51,35 @@ export default function CloudLogin() {
         <h1 className="font-display text-3xl font-bold text-white mb-2">{t('cloudLogin.title')}</h1>
         <p className="text-slate-500 font-light mb-8">BS Biro Cloud</p>
 
-        <form className="space-y-4">
+        <form className="space-y-4" onSubmit={handleSubmit}>
           <input
             type="text"
             placeholder={t('cloudLogin.username')}
             className="input-dark"
+            onChange={() => setLoginError(false)}
+            disabled={isSubmitting}
           />
           <input
             type="password"
             placeholder={t('cloudLogin.password')}
             className="input-dark"
+            onChange={() => setLoginError(false)}
+            disabled={isSubmitting}
           />
-          <button type="submit" className="btn-primary w-full text-lg">
-            {t('cloudLogin.login')}
+          {loginError && (
+            <div
+              role="alert"
+              className="rounded-2xl border border-red-400/30 bg-red-500/10 px-4 py-3 text-sm font-light text-red-100"
+            >
+              {t('cloudLogin.error')}
+            </div>
+          )}
+          <button
+            type="submit"
+            className="btn-primary w-full text-lg disabled:cursor-not-allowed disabled:opacity-70"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? t('cloudLogin.loading') : t('cloudLogin.login')}
           </button>
         </form>
       </motion.div>

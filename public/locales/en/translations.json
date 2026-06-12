@@ -110,7 +110,9 @@
     "title": "Cloud Login",
     "username": "Username",
     "password": "Password",
-    "login": "Login"
+    "login": "Login",
+    "loading": "Checking...",
+    "error": "The username or password is incorrect."
   },
   "servicesItems": {
     "knjigovodstvo": {

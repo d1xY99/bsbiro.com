@@ -110,7 +110,9 @@
     "title": "Accesso al cloud",
     "username": "Nome utente",
     "password": "Password",
-    "login": "Accedi"
+    "login": "Accedi",
+    "loading": "Verifica...",
+    "error": "Nome utente o password non corretti."
   },
   "servicesItems": {
     "knjigovodstvo": {
