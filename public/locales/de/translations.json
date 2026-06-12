@@ -110,7 +110,9 @@
     "title": "Cloud-Anmeldung",
     "username": "Benutzername",
     "password": "Passwort",
-    "login": "Anmelden"
+    "login": "Anmelden",
+    "loading": "Wird geprüft...",
+    "error": "Benutzername oder Passwort ist falsch."
   },
   "servicesItems": {
     "knjigovodstvo": {

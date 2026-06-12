@@ -111,7 +111,9 @@
     "title": "Prijava u cloud",
     "username": "Korisničko ime",
     "password": "Lozinka",
-    "login": "Prijava"
+    "login": "Prijava",
+    "loading": "Provjera...",
+    "error": "Korisničko ime ili lozinka nisu tačni."
   },
   "servicesItems": {
     "knjigovodstvo": {
